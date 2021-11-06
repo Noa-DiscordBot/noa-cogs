@@ -9,6 +9,9 @@ class FakeMod(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+        async def initialize(self):
+            await self.register_casetypes()
+
     @staticmethod
     async def register_casetypes():
         new_types = [
@@ -19,12 +22,6 @@ class FakeMod(commands.Cog):
                 "image": "\N{FACE SCREAMING IN FEAR}",
                 "case_str": "Bam",
             },
-            {
-                "name": "kick",
-                "default_setting": True,
-                "image": "\N{WOMANS BOOTS}",
-                "case_str": "Kick",
-            }
         ]
         await modlog.register_casetypes(new_types)
 
