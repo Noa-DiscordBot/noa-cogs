@@ -16,7 +16,7 @@ class FakeMod(commands.Cog):
             {
                 "name": "bam",
                 "default_setting": True,
-                "image": "\N{HAMMER}",
+                "image": "<:Ayaa:858201202017435659>",
                 "case_str": "Bam",
             },
             {
@@ -35,7 +35,7 @@ class FakeMod(commands.Cog):
         """Bams a user! 
         """
         case = await modlog.create_case(
-            ctx.bot, ctx.guild, ctx.message.created_at, action_type="ban",
+            ctx.bot, ctx.guild, ctx.message.created_at, action_type="bam",
             user=user, moderator=ctx.author, reason=reason
         )
 
