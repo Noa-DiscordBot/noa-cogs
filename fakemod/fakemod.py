@@ -5,9 +5,6 @@ import discord
 class FakeMod(commands.Cog):
     """Fake moderation commands"""
 
-    def __init__(self, bot):
-        self.bot = bot
-
         async def initialize(self):
             await self.register_casetypes()
 
