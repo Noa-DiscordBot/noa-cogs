@@ -1,4 +1,5 @@
-from redbot.core import modlog, commands
+from redbot.core import modlog
+from redbot.core import commands
 import discord
 
 
