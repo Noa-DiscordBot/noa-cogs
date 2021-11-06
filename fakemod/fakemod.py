@@ -32,8 +32,7 @@ class FakeMod(commands.Cog):
         """Bams a user! 
         """
         case = await modlog.create_case(
-            ctx.bot, ctx.guild, ctx.message.created_at, action_type="bam",
-            user=user, moderator=ctx.author, reason=reason
+            ctx.bot, ctx.guild, ctx.message.created_at, action_type="bam", user=user, moderator=ctx.author, reason=reason
         )
 
         await ctx.send(f"Banned {user}.")
