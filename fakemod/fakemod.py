@@ -5,8 +5,8 @@ import discord
 class FakeMod(commands.Cog):
     """Fake moderation commands"""
 
-        async def initialize(self):
-            await self.register_casetypes()
+    async def initialize(self):
+        await self.register_casetypes()
 
     @staticmethod
     async def register_casetypes():
