@@ -21,7 +21,7 @@ class FakeMod(commands.Cog):
                 "default_setting": True,
                 "image": "\N{FACE SCREAMING IN FEAR}",
                 "case_str": "Bam",
-            },
+            }
         ]
         await modlog.register_casetypes(new_types)
 
