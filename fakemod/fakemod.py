@@ -16,7 +16,7 @@ class FakeMod(commands.Cog):
             {
                 "name": "bam",
                 "default_setting": True,
-                "image": "\N{FACE SCREAMING IN FEAR} \N{HAMMER}",
+                "image": "\N{FACE SCREAMING IN FEAR}",
                 "case_str": "Bam",
             },
             {
