@@ -30,7 +30,7 @@ class FakeMod(commands.Cog):
 
     @commands.command()
     @commands.guild_only()
-    @commands.mod_or_permissions(**perms)
+    @commands.mod_or_permissions()
     async def bam(self, ctx, user: discord.Member, reason: str = None):
         """Bams a user! 
         """
