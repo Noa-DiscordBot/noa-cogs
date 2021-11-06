@@ -1,5 +1,6 @@
 from .fakemod import FakeMod
 
-
-def setup(bot):
-    bot.add_cog(FakeMod(bot))
+async def setup(bot):
+    cog = FakeMod()
+    await cog.initialize()
+    bot.add_cog(cog)
