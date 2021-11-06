@@ -16,7 +16,7 @@ class FakeMod(commands.Cog):
             {
                 "name": "bam",
                 "default_setting": True,
-                "image": "<:Ayaa:858201202017435659>",
+                "image": "\N{SCREAM}\N{HAMMER}",
                 "case_str": "Bam",
             },
             {
