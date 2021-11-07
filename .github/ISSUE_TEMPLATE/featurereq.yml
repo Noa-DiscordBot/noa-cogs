@@ -2,7 +2,7 @@ description: "Feature Requests!"
 labels: ["type: enhancement"]
 name: "Feature request"
 body:
-  - type: dropdown
+  - type: 
     id: cog-name
     attributes:
       label: What cog is this feature request for?
