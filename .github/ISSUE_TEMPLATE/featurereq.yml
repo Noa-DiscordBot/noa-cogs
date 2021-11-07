@@ -6,9 +6,9 @@ body:
     id: cog-name
     attributes:
       label: What cog is this feature request for?
-        options:
-          - FakeMod
-          - RandomNoa
+      options:
+        - RandomNoa
+        - FakeMod
         - label: 
           required: true
     validations:
