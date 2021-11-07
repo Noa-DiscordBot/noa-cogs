@@ -9,8 +9,6 @@ body:
       options:
         - RandomNoa
         - FakeMod
-        - label: 
-          required: true
     validations:
       required: true
   - type: textarea
