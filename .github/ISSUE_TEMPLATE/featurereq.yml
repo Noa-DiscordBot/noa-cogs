@@ -1,6 +1,6 @@
-- description: Feature Requests!
-- labels: ["type: enhancement"]
-- name: "Feature request"
+description: Feature Requests!
+labels: ["type: enhancement"]
+name: "Feature request"
 body: ["yaml"]
   - type
     id:cog-name
