@@ -2,19 +2,19 @@ description: "Feature Requests!"
 labels: ["type: enhancement"]
 name: "Feature request"
 body: yaml
-  type: 
+  - type: 
     id: cog-name
     attributes:
       label: What cog is this feature request for?
       options:
         - RandomNoa
         - FakeMod
-  type: textarea
+  - type: textarea
     id: desc
     attributes:
       label: Describe the feature request in as much detail as possible
       placeholder: "The more information the better!"
-  type: checkboxes
+  - type: checkboxes
     id: agreeeee
     attributes:
       label: Have you done the below?
