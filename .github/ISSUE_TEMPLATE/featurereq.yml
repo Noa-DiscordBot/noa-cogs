@@ -10,14 +10,11 @@ body: yaml
         - FakeMod
   - type:textarea
     id:desc
-    attributes:
-      label:Describe the feature request in as much detail as possible
+    attributes:label:Describe the feature request in as much detail as possible
       placeholder:"The more information the better!"
   - type:checkboxes
     id:agreeeee
-    attributes:
-      label:Have you done the below?
+    attributes:label:Have you done the below?
       description:It is important to finish the below, before submitting this issue.
-      options:
-      - label:I have already discussed this with the owner of the repository JeffJrShim#2396, before filing this feature request.
+      options:- label:I have already discussed this with the owner of the repository JeffJrShim#2396, before filing this feature request.
       - label:I have confirmed that my feature request isn't already available on the said cog. 
