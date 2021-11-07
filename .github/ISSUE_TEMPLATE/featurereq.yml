@@ -1,5 +1,5 @@
 description:Feature Requests!
-labels:["type: enhancement"]
+labels: ["type: enhancement"]
 name:"Feature request"
 body:["yaml"]
   - type
