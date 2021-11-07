@@ -1,7 +1,7 @@
 description: "Feature Requests!"
 labels: ["type: enhancement"]
 name: "Feature request"
-body:
+body: yaml
   - type: 
     id: cog-name
     attributes:
