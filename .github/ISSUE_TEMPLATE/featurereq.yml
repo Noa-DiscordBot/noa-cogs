@@ -4,8 +4,7 @@ name: "Feature request"
 body: yaml 
   - type
     id:cog-name
-    attributes:
-      label:What cog is this feature request for?
+    attributes:label:What cog is this feature request for?
       options:
         - RandomNoa
         - FakeMod
