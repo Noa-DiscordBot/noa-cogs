@@ -25,7 +25,8 @@ body:
     attributes:
       label: Have you done the below?
       description: It is important to finish the below, before submitting this issue.
-        options:
-        - label: I have already discussed this with the owner of the repository JeffJrShim#2396, before filing this feature request.
-        - label: I have confirmed that my feature request isn't already available on the said cog. 
-          required: true
+      options:
+      - label: I have already discussed this with the owner of the repository JeffJrShim#2396, before filing this feature request.
+      - label: I have confirmed that my feature request isn't already available on the said cog. 
+    validations:
+      required: true
