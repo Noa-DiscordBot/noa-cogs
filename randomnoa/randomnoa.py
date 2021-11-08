@@ -41,5 +41,5 @@ async def randomnoa(self, ctx):
         await ctx.send(embed=embed)
 
     else:
-        e2=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained:", color=await ctx.embed_color())
-        await ctx.send(embed=e2)
+        embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained:", color=await ctx.embed_color())
+        await ctx.send(embed=embed)
