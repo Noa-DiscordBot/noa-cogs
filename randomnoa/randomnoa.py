@@ -32,17 +32,16 @@ link_22="https://i.ibb.co/TLwFN5G/noa4starbirthday.png"
 link_23="https://i.ibb.co/mb2QRdz/noa4starbirthday-t.png"
 link_24="https://i.ibb.co/GCFH5mp/noaSP.png"
 
-    @commands.command()
-    async def randomnoa(self, ctx):
-            noachoice = random.randint(1,2)
+@commands.command()
+async def randomnoa(self, ctx):
+    noachoice = random.randint(1,2)
 
-            if noachoice == 1:
-                e1=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=await ctx.embed_color())
-                e1.set_image=link_1
-                await ctx.send(embed=e1)
+    if noachoice == 1:
+        e1=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=await ctx.embed_color())
+        e1.set_image=link_1
+        await ctx.send(embed=e1)
 
-            elif noachoice == 2:
-                e2=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=await ctx.embed_color())
-                e2.set_image=link_2
-                await ctx.send(embed=e2)
-                
+    elif noachoice == 2:
+        e2=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=await ctx.embed_color())
+        e2.set_image=link_2
+        await ctx.send(embed=e2)
