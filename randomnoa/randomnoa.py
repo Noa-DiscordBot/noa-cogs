@@ -37,11 +37,11 @@ async def randomnoa(self, ctx):
     noachoice = random.randint(1,2)
 
     if noachoice == 1:
-        embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=await ctx.embed_color())
+        embed=discord.Embed(title="Random Noa generated!", description="Card Name: Uniform\n Rarity: 1 star\n Untrained or Trained: None", color=await ctx.embed_color())
         embed.set_image=link_1
         await ctx.send(embed=embed)
 
     else:
-        e2=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=await ctx.embed_color())
+        e2=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained:", color=await ctx.embed_color())
         e2.set_image=link_2
         await ctx.send(embed=e2)
