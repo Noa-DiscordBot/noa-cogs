@@ -18,7 +18,8 @@ class FakeMod(commands.Cog):
                 "default_setting": True,
                 "image": "\N{HAMMER}<:Ayaa:858201202017435659>",
                 "case_str": "Bam",
-            }
+            },
+            
         ]
         await modlog.register_casetypes(new_types)
 
