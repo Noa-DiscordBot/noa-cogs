@@ -11,7 +11,8 @@ class RandomNoa(commands.Cog):
     @commands.command()
     async def randomnoa(self, ctx):
         cm = cog_manager.CogManager()
-        cards = json.load(open(str(cm.install_path()) + "/randomnoa/cards.json", "r"))
+        ipath = str(await cm.install_path())
+        cards = json.load(open( + "/randomnoa/cards.json", "r"))
         noachoice = random.randint(1, 2)
 
         if noachoice == 1:
