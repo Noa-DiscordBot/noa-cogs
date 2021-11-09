@@ -13,7 +13,7 @@ class RandomNoa(commands.Cog):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
-        noachoice = 8
+        noachoice = random.randint()
 
         if noachoice == 1:
             embed=discord.Embed(title="Random Noa generated!", description="Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n ", color=await ctx.embed_color())
@@ -55,4 +55,13 @@ class RandomNoa(commands.Cog):
             embed.set_image(url=cards[noachoice-1])
             await ctx.send(embed=embed)
 
+        elif noachoice == 9:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Melty Smile \n Rarity: 3⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
+            embed.set_image(url=cards[noachoice-1])
+            await ctx.send(embed=embed)
+
+        else:
+            embed=discord.Embed(title="Is that.... a prank?", description="Card Name: Pingu Hitting Those Moves \n Rarity: 20:star: \n Untrained or Trained: Trained (obviously?) \n ", color=await ctx.embed_color())
+            embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
+            await ctx.send(embed=embed)
     
