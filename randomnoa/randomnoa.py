@@ -23,4 +23,4 @@ class RandomNoa(commands.Cog):
         else:
             embed=discord.Embed(title="Random Noa generated!", description="Card Name: DJ- LIVE! \n Rarity: 2 ⭐\n Untrained or Trained: None \n ", color=0x581919)
             embed.set_image(url=cards[noachoice-1])
-            await ctx.send(embed=e)
+            await ctx.send(embed=embed)
