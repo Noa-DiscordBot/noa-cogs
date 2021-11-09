@@ -10,7 +10,7 @@ class RandomNoa(commands.Cog):
 
     @commands.command()
     async def randomnoa(self, ctx):
-        var cm = new cog_manager.CogManager()
+        cm = new cog_manager.CogManager()
         cards = json.load(open(str(cm.install_path()) + "/randomnoa/cards.json", "r"))
         noachoice = random.randint(1, 2)
 
