@@ -10,7 +10,7 @@ class RandomNoa(commands.Cog):
 
     @commands.command()
     async def randomnoa(self, ctx):
-        cards = json.load(open("cards.json", "r"))
+        cards = json.load(open("randomnoa/cards.json", "r"))
         noachoice = random.randint(1, 2)
 
         if noachoice == 1:
