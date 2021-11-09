@@ -33,14 +33,14 @@ link_22="https://i.ibb.co/TLwFN5G/noa4starbirthday.png"
 link_23="https://i.ibb.co/mb2QRdz/noa4starbirthday-t.png"
 link_24="https://i.ibb.co/GCFH5mp/noaSP.png"
 
-@commands.command()
-async def randomnoa(self, ctx):
-    noachoice = random.randint(1, 2)
+    @commands.command()
+    async def randomnoa(self, ctx):
+        noachoice = random.randint(1, 2)
 
-    if noachoice == 1:
-        embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=0x581919)
-        await ctx.send(embed=embed)
+        if noachoice == 1:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=0x581919)
+            await ctx.send(embed=embed)
         
-    else:
-        embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=0x581919)
-        await ctx.send(embed=embed)
+        else:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=0x581919)
+            await ctx.send(embed=embed)
