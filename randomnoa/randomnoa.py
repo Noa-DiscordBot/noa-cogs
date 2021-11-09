@@ -13,7 +13,7 @@ class RandomNoa(commands.Cog):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
-        noachoice = 9 # random.randint(1,10)
+        noachoice = random.randint(1,10)
 
         if noachoice == 1:
             embed=discord.Embed(title="Random Noa generated!", description="Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n ", color=await ctx.embed_color())
