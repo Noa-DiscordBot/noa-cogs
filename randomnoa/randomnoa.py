@@ -41,4 +41,4 @@ class RandomNoa(commands.Cog):
             await ctx.send(embed=embed)
 
         else:
-            await ctx.send("temp message OwO")
+            await ctx.send("The cog isn't done yet. Not all images are done. :3 <:Noa:855810417938661416>")
