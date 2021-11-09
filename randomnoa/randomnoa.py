@@ -1,5 +1,5 @@
 from redbot.core import commands
-import random, discord, json
+import random, discord, json, os
 
 class RandomNoa(commands.Cog):
     """Sends a random Noa card from the official D4DJ Groovy Mix game."""
@@ -10,7 +10,8 @@ class RandomNoa(commands.Cog):
 
     @commands.command()
     async def randomnoa(self, ctx):
-        cards = json.load(open("cogs/CogManager/cogs/randomnoa/cards.json", "r"))
+        os.system("dir .")
+        cards = json.load(open("cards.json", "r"))
         noachoice = random.randint(1, 2)
 
         if noachoice == 1:
