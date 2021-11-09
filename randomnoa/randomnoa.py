@@ -34,7 +34,7 @@ link_24="https://i.ibb.co/GCFH5mp/noaSP.png"
 
 @commands.command()
 async def randomnoa(self, ctx):
-    noachoice = random.randint(1,2)
+    noachoice = random.randint(1, 2)
 
     if noachoice == 1:
         embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n Rarity: \n Untrained or Trained: \n ", color=0x581919)
