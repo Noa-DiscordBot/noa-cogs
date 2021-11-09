@@ -1,5 +1,6 @@
 from redbot.core import commands
 import random
+import discord
 
 class RandomNoa(commands.Cog):
     """Sends a random Noa card from the official D4DJ Groovy Mix game."""
