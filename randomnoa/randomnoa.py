@@ -55,7 +55,4 @@ class RandomNoa(commands.Cog):
             embed.set_image(url=cards[noachoice-1])
             await ctx.send(embed=embed)
 
-        else:
-            embed=discord.Embed(title="Is that.... a prank?", description="Card Name: Pingu Hitting Those Moves \n Rarity: 20⭐ \n Untrained or Trained: Trained (obviously?) \n ", color=await ctx.embed_color())
-            embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
-            await ctx.send(embed=embed)
+    
