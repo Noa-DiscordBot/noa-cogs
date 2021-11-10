@@ -9,10 +9,11 @@ To add my repository to your Red instance, run: <br>
 and, to install cogs from this repository: <br>
 `[p]cog install noa-cogs <whatevercogyouwant>`<br>
 
+# Current Cogs <br>
 <details>
-<summary>Current Cogs</summary>
+<summary>Click to see the current cog list!</summary>
 <br>
-+ FakeMod - Fake moderation commands to troll with.
++ FakeMod - Fake moderation commands to troll with. <br>
 + RandomNoa - Shows a random Noa card from the official D4DJ Groovy Mix game. (NO leaks though.)
 </details>
 
