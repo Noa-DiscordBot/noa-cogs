@@ -82,7 +82,7 @@ class RandomNoa(commands.Cog):
             await ctx.send(embed=embed)
 
         elif noachoice == 12:
-            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Enchanted Lamp \n Rarity: 3⭐\n Untrained or Trained: Trained  \n ", color=await ctx.embed_color())
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Skydrifter \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n ", color=await ctx.embed_color())
             embed.set_image(url=cards[noachoice-1])
             embed.set_footer(text=noachoice)
             await ctx.send(embed=embed)
