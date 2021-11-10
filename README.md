@@ -5,9 +5,17 @@ If you do need anything, do not hesitate to head to my server [here](https://dis
 
 # Installation <br>
 To add my repository to your Red instance, run: <br>
-`[p]repo add noa-cogs-public https://github.com/JeffJrShim/noa-cogs/`<br>
+`[p]repo add noa-cogs https://github.com/JeffJrShim/noa-cogs/`<br>
 and, to install cogs from this repository: <br>
-`[p]cog install noa-cogs-public <whatevercogyouwant>`<br>
+`[p]cog install noa-cogs <whatevercogyouwant>`<br>
+
+# Current Cogs <br>
+<details>
+<summary>Click to see the current cog list!</summary>
+<br>
+-FakeMod <br>   - Fake moderation commands to troll with. <br>
+-RandomNoa <br> - Shows a random Noa card from the official D4DJ Groovy Mix game. (NO leaks though.)
+</details>
 
 # Contributing <br>
 You may submit pull requests and issues if you have found any weird bugs or unintended behaviour with my cogs. <br>
