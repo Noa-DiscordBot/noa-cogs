@@ -75,6 +75,12 @@ class RandomNoa(commands.Cog):
             embed.set_footer(text=noachoice)
             await ctx.send(embed=embed)
 
+        elif noachoice == 11:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: i- \n Rarity: ok\n Untrained or Trained: Untrained \n ", color=await ctx.embed_color())
+            embed.set_image(url=cards[noachoice-1])
+            embed.set_footer(text=noachoice)
+            await ctx.send(embed=embed)
+
         else:
             embed=discord.Embed(title="Is that.... a prank?", description="Card Name: Pingu Hitting Those Moves \n Rarity: 20:star: \n Untrained or Trained: Trained (obviously?) \n ", color=await ctx.embed_color())
             embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
