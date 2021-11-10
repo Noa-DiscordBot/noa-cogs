@@ -5,9 +5,15 @@ If you do need anything, do not hesitate to head to my server [here](https://dis
 
 # Installation <br>
 To add my repository to your Red instance, run: <br>
-`[p]repo add noa-cogs-public https://github.com/JeffJrShim/noa-cogs/`<br>
+`[p]repo add noa-cogs https://github.com/JeffJrShim/noa-cogs/`<br>
 and, to install cogs from this repository: <br>
-`[p]cog install noa-cogs-public <whatevercogyouwant>`<br>
+`[p]cog install noa-cogs <whatevercogyouwant>`<br>
+
+# Current Cogs <br>
+<tr> 
+  <td>e</td>
+  <td>e</td>
+<tr>
 
 # Contributing <br>
 You may submit pull requests and issues if you have found any weird bugs or unintended behaviour with my cogs. <br>
