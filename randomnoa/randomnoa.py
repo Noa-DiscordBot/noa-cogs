@@ -164,4 +164,3 @@ class RandomNoa(commands.Cog):
             embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
             embed.set_footer(text=noachoice)
             await ctx.send(embed=embed)
-    
