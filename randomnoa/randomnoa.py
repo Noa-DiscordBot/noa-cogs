@@ -96,7 +96,7 @@ class RandomNoa(commands.Cog):
             await ctx.send(embed=embed)
 
         elif noachoice == 17:
-            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Sweet Cookie \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n ", color=await ctx.embed_color())
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Sweet Cookie \n Rarity: 4⭐\n Untrained or Trained: Trained  \n ", color=await ctx.embed_color())
             embed.set_image(url=cards[noachoice-1])
             await ctx.send(embed=embed)
 
@@ -139,3 +139,9 @@ class RandomNoa(commands.Cog):
             embed=discord.Embed(title="Is that.... a prank?", description="Card Name: Pingu Hitting Those Moves \n Rarity: 20:star: \n Untrained or Trained: Trained (obviously?) \n ", color=await ctx.embed_color())
             embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
             await ctx.send(embed=embed)
+
+ #    @commands.command()
+ #   async def aboutnoa(self,ctx):
+ #       embed=discord.Embed(title="About Noa", description="Card Name: Pingu Hitting Those Moves \n Rarity: 20:star: \n Untrained or Trained: Trained (obviously?) \n ", color=await ctx.embed_color())
+ #       embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
+#        await ctx.send(embed=embed)
