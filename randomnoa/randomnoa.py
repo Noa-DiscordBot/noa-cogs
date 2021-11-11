@@ -13,7 +13,7 @@ class RandomNoa(commands.Cog):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
-        noachoice = 20 #random.randint(1,13)
+        noachoice = 22 #random.randint(1,13)
 
         if noachoice == 1:
             embed=discord.Embed(title="Random Noa generated!", description="Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n ", color=await ctx.embed_color())
@@ -130,7 +130,19 @@ class RandomNoa(commands.Cog):
             await ctx.send(embed=embed)
 
         elif noachoice == 20:
-            embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n - English name: Brilliant Hydrangea\n - Japanese name: 燦爛たるあじさい \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Untrained \n ", color=await ctx.embed_color())
+            embed.set_image(url=cards[noachoice-1])
+            embed.set_footer(text=noachoice)
+            await ctx.send(embed=embed)
+
+        elif noachoice == 21:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
+            embed.set_image(url=cards[noachoice-1])
+            embed.set_footer(text=noachoice)
+            await ctx.send(embed=embed)
+
+        elif noachoice == 22:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
             embed.set_image(url=cards[noachoice-1])
             embed.set_footer(text=noachoice)
             await ctx.send(embed=embed)
