@@ -129,7 +129,7 @@ class RandomNoa(commands.Cog):
             embed.set_footer(text=noachoice)
             await ctx.send(embed=embed)
 
-        elif noachoice == 19:
+        elif noachoice == 20:
             embed=discord.Embed(title="Random Noa generated!", description="Card Name: \n - English name: Brilliant Hydrangea\n - Japanese name: 燦爛たるあじさい \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
             embed.set_image(url=cards[noachoice-1])
             embed.set_footer(text=noachoice)
