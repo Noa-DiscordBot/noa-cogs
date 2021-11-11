@@ -142,7 +142,19 @@ class RandomNoa(commands.Cog):
             await ctx.send(embed=embed)
 
         elif noachoice == 22:
-            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Birthday Noa (1st Set) \n Rarity: 4⭐\n Untrained or Trained: Untrained \n ", color=await ctx.embed_color())
+            embed.set_image(url=cards[noachoice-1])
+            embed.set_footer(text=noachoice)
+            await ctx.send(embed=embed)
+
+        elif noachoice == 23:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: Birthday Noa (1st Set) \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
+            embed.set_image(url=cards[noachoice-1])
+            embed.set_footer(text=noachoice)
+            await ctx.send(embed=embed)
+
+        elif noachoice == 24:
+            embed=discord.Embed(title="Random Noa generated!", description="Card Name: 1st Anniversary \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
             embed.set_image(url=cards[noachoice-1])
             embed.set_footer(text=noachoice)
             await ctx.send(embed=embed)
