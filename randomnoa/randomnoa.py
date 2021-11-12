@@ -14,8 +14,6 @@ class RandomNoa(commands.Cog):
         ipath = str(await cm.install_path())
         cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
         noachoice = random.randint(1, 25)
-        embed=None
-        try:
             if noachoice == 1:
                 embed=discord.Embed(title="Random Noa generated!", description="Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n ", color=await ctx.embed_color())
                 embed.set_image(url=cards[noachoice-1])
