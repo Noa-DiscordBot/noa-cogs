@@ -22,19 +22,19 @@ class FakeMod(commands.Cog):
             {
                 "name": "keck",
                 "default_setting": False,
-                "image": "\n{BOOT}<:Ayaa:858201202017435659>",
+                "image": "\n:boot:<:Ayaa:858201202017435659>",
                 "case_str": "Keck",
             },
             {
                 "name": "moot",
                 "default_setting": False,
-                "image": "\n{SHUSH}<:Ayaa:858201202017435659>",
+                "image": "\n:shush:<:Ayaa:858201202017435659>",
                 "case_str": "Moot",
             } ,
             {
                 "name": "warm",
                 "default_setting": False,
-                "image": "\n{WARNING}<:Ayaa:858201202017435659>",
+                "image": "\n:warning:<:Ayaa:858201202017435659>",
                 "case_str": "Warm",
             }
         ]
