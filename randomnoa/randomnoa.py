@@ -140,7 +140,7 @@ class RandomNoa(commands.Cog):
                 embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
                 await ctx.reply(embed=embed, mention_author=False)
         except:
-            continue
+            """ Do Nothing """
 
  #    @commands.command()
  #   async def aboutnoa(self,ctx):
