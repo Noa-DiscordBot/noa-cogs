@@ -16,25 +16,25 @@ class FakeMod(commands.Cog):
             {
                 "name": "bam",
                 "default_setting": True,
-                "image": "\n{HAMMER}<:Ayaa:858201202017435659>",
+                "image": "\N{HAMMER}<:Ayaa:858201202017435659>",
                 "case_str": "Bam",
             },
             {
                 "name": "keck",
                 "default_setting": False,
-                "image": "\n:boot:<:Ayaa:858201202017435659>",
+                "image": "\N{BOOT}<:Ayaa:858201202017435659>",
                 "case_str": "Keck",
             },
             {
                 "name": "moot",
                 "default_setting": False,
-                "image": "\n:shush:<:Ayaa:858201202017435659>",
+                "image": "\N{SHUSH}:<:Ayaa:858201202017435659>",
                 "case_str": "Moot",
             } ,
             {
                 "name": "warm",
                 "default_setting": False,
-                "image": "\n:warning:<:Ayaa:858201202017435659>",
+                "image": "\N{WARNING}<:Ayaa:858201202017435659>",
                 "case_str": "Warm",
             }
         ]
