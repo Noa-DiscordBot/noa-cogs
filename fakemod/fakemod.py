@@ -30,6 +30,12 @@ class FakeMod(commands.Cog):
                 "default_setting": False,
                 "image": "\N{SHUSH}<:Ayaa:858201202017435659>",
                 "case_str": "Moot",
+            } ,
+            {
+                "name": "warm",
+                "default_setting": False,
+                "image": "\N{WARNING}<:Ayaa:858201202017435659>",
+                "case_str": "Warm",
             }
         ]
         await modlog.register_casetypes(new_types)
@@ -69,3 +75,16 @@ class FakeMod(commands.Cog):
         )
 
         await ctx.send(f"Muted {user}.")
+
+    @commands.command()
+    @commands.guild_only()
+    @commands.mod_or_permissions()
+    async def warm(self, ctx, user: discord.Member, reason: str = None):
+        """Warms a user! 
+        """
+        case = await modlog.create_case(
+            ctx.bot, ctx.guild, datetime.now() , action_type="warm", user=user, moderator=ctx.author, reason=reason
+        )
+
+        await ctx.send(f"Warned {user}.")
+
