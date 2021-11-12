@@ -57,3 +57,15 @@ class FakeMod(commands.Cog):
         )
 
         await ctx.send(f"Kicked {user}.")
+     
+    @commands.command()
+    @commands.guild_only()
+    @commands.mod_or_permissions()
+    async def moot(self, ctx, user: discord.Member, reason: str = None):
+        """Moots a user! 
+        """
+        case = await modlog.create_case(
+            ctx.bot, ctx.guild, datetime.now() , action_type="moot", user=user, moderator=ctx.author, reason=reason
+        )
+
+        await ctx.send(f"Muted {user}.")
