@@ -24,6 +24,12 @@ class FakeMod(commands.Cog):
                 "default_setting": False,
                 "image": "\N{BOOT}<:Ayaa:858201202017435659>",
                 "case_str": "Keck",
+            },
+            {
+                "name": "moot",
+                "default_setting": False,
+                "image": "\N{SHUSH}<:Ayaa:858201202017435659>",
+                "case_str": "Moot",
             }
         ]
         await modlog.register_casetypes(new_types)
