@@ -1,6 +1,6 @@
 
 {
-    "author": ["JeffJrShim#2396"],
+    "author": ["JeffJrShim#2396, Guacaplushy#0577"],
     "name": "FakeMod",
     "install_msg": "Thanks for installing FakeMod. Run `[p]help FakeMod` to see all the available commands in this cog. Events will be sent into your modlog channel, in core's ModLog. If you need any help, feel free to join my server, at https://discord.gg/RSAetqdhRU and ask at the #noa-cogs channel.",
     "description": "Fake moderation events, to play around with for staff.",
