@@ -18,6 +18,12 @@ class FakeMod(commands.Cog):
                 "default_setting": True,
                 "image": "\N{HAMMER}<:Ayaa:858201202017435659>",
                 "case_str": "Bam",
+            },
+            {
+                "name": "keck",
+                "default_setting": False,
+                "image": "\N{BOOT}<:Ayaa:858201202017435659>",
+                "case_str": "Keck",
             }
         ]
         await modlog.register_casetypes(new_types)
@@ -33,3 +39,15 @@ class FakeMod(commands.Cog):
         )
 
         await ctx.send(f"Banned {user}.")
+
+    @commands.command()
+    @commands.guild_only()
+    @commands.mod_or_permissions()
+    async def keck(self, ctx, user: discord.Member, reason: str = None):
+        """Kecks a user! 
+        """
+        case = await modlog.create_case(
+            ctx.bot, ctx.guild, datetime.now() , action_type="keck", user=user, moderator=ctx.author, reason=reason
+        )
+
+        await ctx.send(f"Kicked {user}.")
