@@ -14,6 +14,7 @@ class RandomNoa(commands.Cog):
         ipath = str(await cm.install_path())
         cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
         noachoice = random.randint(1, 25)
+        embed=None
         try:
             if noachoice == 1:
                 embed=discord.Embed(title="Random Noa generated!", description="Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n ", color=await ctx.embed_color())
@@ -140,7 +141,7 @@ class RandomNoa(commands.Cog):
                 embed.set_image(url=" https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif ")
                 await ctx.reply(embed=embed, mention_author=False)
         except:
-            """ Do Nothing """
+            await ctx.send(embed=embed)
 
  #    @commands.command()
  #   async def aboutnoa(self,ctx):
