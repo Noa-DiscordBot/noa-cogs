@@ -28,7 +28,7 @@ class FakeMod(commands.Cog):
             {
                 "name": "moot",
                 "default_setting": False,
-                "image": "\N{SHUSH}:<:Ayaa:858201202017435659>",
+                "image": "\N{SHUSH}<:Ayaa:858201202017435659>",
                 "case_str": "Moot",
             } ,
             {
