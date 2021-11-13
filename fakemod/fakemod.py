@@ -34,7 +34,7 @@ class FakeMod(commands.Cog):
             {
                 "name": "warm",
                 "default_setting": True,
-                "image": "\N{WARNING}<:Ayaa:858201202017435659>",
+                "image": "\N{WARNING SIGN}<:Ayaa:858201202017435659>",
                 "case_str": "Warm",
             }
         ]
