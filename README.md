@@ -1,10 +1,10 @@
 # Noa Cogs <br>
-Hi! Welcome to my humble repository. This repository is my collection of cogs, for [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot). <br><br>
-**Note that this repository is not approved by the Cog-Creators. Anything that goes wrong with your bot after using this, is not my responsibility.** <br><br>
-If you do need anything, do not hesitate to head to my server [here](https://discord.gg/RSAetqdhRU)! See you then!
+Hi! Welcome to Noa's cog repository. This repository is Noa's collection of cogs, for [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot). This repo is maintained by JeffJrShim#2396 and Guacaplushy#0577. <br><br>
+**Note that this repository is not approved by the Cog-Creators (yet). Anything that goes wrong with your bot after using this, is not my responsibility.** <br><br>
+If you do need anything, do not hesitate to head to the server [here](https://discord.gg/RSAetqdhRU)! See you then!
 
 # Installation <br>
-To add my repository to your Red instance, run: <br>
+To add the repository to your Red instance, run: <br>
 `[p]repo add noa-cogs https://github.com/Noa-Discord-Bot/noa-cogs/`<br>
 and, to install cogs from this repository: <br>
 `[p]cog install noa-cogs <whatevercogyouwant>`<br>
@@ -14,11 +14,11 @@ and, to install cogs from this repository: <br>
 <summary>Click to see the current cog list!</summary>
 <br>
 -FakeMod <br>   - Fake moderation commands to troll with. <br>
--RandomNoa <br> - Shows a random Noa card from the official D4DJ Groovy Mix game. (NO leaks though, cuz it not cool :( )
+-RandomNoa <br> - Shows a random Noa card from the official D4DJ Groovy Mix game. (NO leaks though, cuz leaks suck)
 </details>
 
 # Contributing <br>
 You may submit pull requests and issues if you have found any weird bugs or unintended behaviour with my cogs. <br>
 
 # Feature Requests <br>
-Ooooh, feature requests you say. Be sure to discuss with me on Discord first, before doing anything else. If I have given you acceptance, go ahead, open an issue in the Feature Request category. 
+Ooooh, feature requests you say. Be sure to discuss with JeffJrShim#2396 on Discord first, before doing anything else. If you have been given acceptance, go ahead, open an issue in the Feature Request category. 
