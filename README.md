@@ -21,4 +21,4 @@ and, to install cogs from this repository: <br>
 You may submit pull requests and issues if you have found any weird bugs or unintended behaviour with my cogs. <br>
 
 # Feature Requests <br>
-Ooooh, feature requests you say. Be sure to discuss with JeffJrShim#2396 on Discord first, before doing anything else. If you have been given acceptance, go ahead, open an issue in the Feature Request category. 
+Ooooh, feature requests you say. Be sure to discuss with JeffJrShim#2396 in the #noa-cogs channel first, before doing anything else. If you have been given acceptance, go ahead, open an issue in the Feature Request category. 
