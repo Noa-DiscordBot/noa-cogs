@@ -5,7 +5,7 @@ If you do need anything, do not hesitate to head to the server [here](https://di
 
 # Installation <br>
 To add the repository to your Red instance, run: <br>
-`[p]repo add noa-cogs https://github.com/Noa-Discord-Bot/noa-cogs/`<br>
+`[p]repo add noa-cogs https://github.com/Noa-DiscordBot/noa-cogs/`<br>
 and, to install cogs from this repository: <br>
 `[p]cog install noa-cogs <whatevercogyouwant>`<br>
 
