@@ -22,13 +22,13 @@ class FakeMod(commands.Cog):
             {
                 "name": "keck",
                 "default_setting": True,
-                "image": "\N{BOOT}<:Ayaa:858201202017435659>",
+                "image": "\N{WOMANS BOOTS}<:Ayaa:858201202017435659>",
                 "case_str": "Keck",
             },
             {
                 "name": "moot",
                 "default_setting": True,
-                "image": "\N{SHUSH}<:Ayaa:858201202017435659>",
+                "image": "\N{FACE WITH FINGER COVERING CLOSED LIPS}<:Ayaa:858201202017435659>",
                 "case_str": "Moot",
             } ,
             {
