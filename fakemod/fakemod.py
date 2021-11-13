@@ -16,25 +16,25 @@ class FakeMod(commands.Cog):
             {
                 "name": "bam",
                 "default_setting": True,
-                "image": "\N{HAMMER}<:Ayaa:858201202017435659>",
+                "image": r"\N{HAMMER}<:Ayaa:858201202017435659>",
                 "case_str": "Bam",
             },
             {
                 "name": "keck",
                 "default_setting": True,
-                "image": "\N{WOMANS BOOTS}<:Ayaa:858201202017435659>",
+                "image": r"\N{WOMANS BOOTS}<:Ayaa:858201202017435659>",
                 "case_str": "Keck",
             },
             {
                 "name": "moot",
                 "default_setting": True,
-                "image": "\N{FACE WITH FINGER COVERING CLOSED LIPS}<:Ayaa:858201202017435659>",
+                "image": r"\N{FACE WITH FINGER COVERING CLOSED LIPS}<:Ayaa:858201202017435659>",
                 "case_str": "Moot",
             } ,
             {
                 "name": "warm",
                 "default_setting": True,
-                "image": "\N{WARNING}<:Ayaa:858201202017435659>",
+                "image": r"\N{WARNING}<:Ayaa:858201202017435659>",
                 "case_str": "Warm",
             }
         ]
