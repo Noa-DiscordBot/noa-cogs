@@ -22,7 +22,7 @@ class FakeMod(commands.Cog):
             {
                 "name": "keck",
                 "default_setting": False,
-                "image": "\N{BOOT}:<:Ayaa:858201202017435659>",
+                "image": "\N{BOOT}<:Ayaa:858201202017435659>",
                 "case_str": "Keck",
             },
             {
