@@ -55,7 +55,7 @@ class FakeMod(commands.Cog):
     @commands.command()
     @commands.guild_only()
     @commands.mod_or_permissions()
-    async def keck(self, ctx, user: discord.Member, reason: str = None):
+    async def keck(self, ctx, user: discord.Member, *, reason: str = None):
         """Kecks a user! 
         """
         case = await modlog.create_case(
@@ -67,7 +67,7 @@ class FakeMod(commands.Cog):
     @commands.command()
     @commands.guild_only()
     @commands.mod_or_permissions()
-    async def moot(self, ctx, user: discord.Member, reason: str = None):
+    async def moot(self, ctx, user: discord.Member, *, reason: str = None):
         """Moots a user! 
         """
         case = await modlog.create_case(
@@ -79,7 +79,7 @@ class FakeMod(commands.Cog):
     @commands.command()
     @commands.guild_only()
     @commands.mod_or_permissions()
-    async def warm(self, ctx, user: discord.Member, reason: str = None):
+    async def warm(self, ctx, user: discord.Member, *, reason: str = None):
         """Warms a user! 
         """
         case = await modlog.create_case(
