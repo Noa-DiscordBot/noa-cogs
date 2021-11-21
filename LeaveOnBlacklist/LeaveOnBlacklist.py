@@ -9,4 +9,4 @@ class LeaveOnBlacklist(Cog):
   async def on_guild_join(self, guild):
     is_blacklisted = not await self.bot.allowed_by_whitelist_blacklist(who_id=guild.owner_id)
     if is_blacklisted:
-      guild.leave()
+      await guild.leave()
