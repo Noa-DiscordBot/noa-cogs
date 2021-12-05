@@ -10,6 +10,7 @@ class RandomNoa(commands.Cog):
 
     @commands.command()
     async def randomnoa(self, ctx):
+        """Sends a random Noa card from the official D4DJ Groovy Mix game. (JP version.)"""
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
