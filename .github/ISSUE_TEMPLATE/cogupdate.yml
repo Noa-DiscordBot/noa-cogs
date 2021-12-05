@@ -1,0 +1,19 @@
+description: "File a cog update. Not really for regular users, so ignore this."
+labels: ["type: enhancement"]
+name: "Cog Updates!"
+assignees: JeffJrShim
+body:
+  - type: input
+    id: cog-name
+    attributes:
+      label: "What cog is this update for?"
+      placeholder: "Enter the name of the cog"
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: "Describe the update in as much detail as possible"
+      placeholder: "The more information the better!"
+    validations:
+      required: true
