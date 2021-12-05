@@ -10,10 +10,11 @@ class RandomNoa(commands.Cog):
 
     @commands.command()
     async def randomnoa(self, ctx):
+        """Sends a random Noa card from the official D4DJ Groovy Mix game. (JP version.)"""
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
-        noachoice = random.randint(1, 27)
+        noachoice = random.randint(1, 29)
         try:
             if noachoice == 1:
                 embed=discord.Embed(title="Random Noa generated!", description="Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n ", color=await ctx.embed_color())
@@ -222,6 +223,20 @@ class RandomNoa(commands.Cog):
                    await ctx.reply(embed=embed, mention_author=False)
                 except discord.HTTPException:
                    await ctx.send(embed=embed)
+            elif noachoice == 27:
+                embed=discord.Embed(title="Random Noa generated!", description="Card Name: Promised Bench \n Rarity: 4⭐\n Untrained or Trained: Untrained \n ", color=await ctx.embed_color())
+                embed.set_image(url=cards[noachoice-1])
+                try:
+                   await ctx.reply(embed=embed, mention_author=False)
+                except discord.HTTPException:
+                   await ctx.send(embed=embed)
+            elif noachoice == 28:
+                embed=discord.Embed(title="Random Noa generated!", description="Card Name: Promised Bench \n Rarity: 4⭐\n Untrained or Trained: Trained \n ", color=await ctx.embed_color())
+                embed.set_image(url=cards[noachoice-1])
+                try:
+                   await ctx.reply(embed=embed, mention_author=False)
+                except discord.HTTPException:
+                   await ctx.send(embed=embed)    
                 
             else:
                 embed=discord.Embed(title="Is that.... a prank?", description="Card Name: Pingu Hitting Those Moves \n Rarity: 20:star: \n Untrained or Trained: Trained (obviously?) \n ", color=await ctx.embed_color())
