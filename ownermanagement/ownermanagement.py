@@ -11,6 +11,7 @@ class OwnerManagement(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
+        self.default_owners = self.bot.owner_ids.copy()
     
     @commands.group(invoke_without_command="True")
     @commands.is_owner()
@@ -35,8 +36,13 @@ class OwnerManagement(commands.Cog):
     async def remove(self, ctx, *, user: discord.User):
         """Removes an owner from the bot."""
         user=self.bot.get_user(user.id)
-        self.bot.owner_ids.remove(user.id)
-        await ctx.tick()
-        msg=f"{user} is no longer a bot owner."
-        await ctx.send(msg)
+        
+        remmsg=f"{user} is no longer a bot owner."
+        getoutmsg=f"{user} is a default owner, and cannot be removed."
+        if user.id in self.default_owners:
+            await ctx.send(getoutmsg)
+        else:
+            self.bot.owner_ids.remove(user.id)
+            await ctx.tick()
+            await ctx.send(remmsg)
         
