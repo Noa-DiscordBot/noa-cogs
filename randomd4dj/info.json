@@ -1,0 +1,9 @@
+{
+    "author": ["JeffJrShim#2396, Guacaplushy#0577"], 
+    "name": "RandomD4DJ",
+    "install_msg": "Thanks for installing RandomD4DJ. Run `[p]help RandomD4DJ` to get a random D4DJ card from the Japanese version of the official D4DJ Groovy Mix game! If you need any help, feel free to join my server, at https://discord.gg/RSAetqdhRU and ask at the #noa-cogs channel.",
+    "description": "Fetch an official D4DJ card, from the D4DJ Groovy Mix game. ",
+    "short": "Get a random D4DJ card!",
+    "end_user_data_statement": "This cog does not persistently store any data about users",
+    "min_bot_version": "3.4.6"
+}
