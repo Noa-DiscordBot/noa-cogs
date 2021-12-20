@@ -14,6 +14,7 @@ and, to install cogs from this repository: <br>
 -FakeMod <br>   - Fake moderation commands to troll with. <br>
 -RandomD4DJ <br> - Shows a random D4DJ card from the official D4DJ Groovy Mix game. (NO leaks though, cuz leaks suck)
 </details>
+
 # Contributing <br>
 You may submit pull requests and issues if you have found any weird bugs or unintended behaviour with my cogs. <br>
 # Feature Requests <br>
