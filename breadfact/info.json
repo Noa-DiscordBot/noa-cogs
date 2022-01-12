@@ -1,1 +1,9 @@
-
+{
+    "author": ["JeffJrShim#2396, ＜－モカアオバ#6142"], 
+    "name": "BreadFact",
+    "install_msg": "Thanks for installing BreadFact. Run `[p]breadfact` to get a random bread fact! If you need any help, feel free to join my server, at https://discord.gg/RSAetqdhRU and ask at the #noa-cogs channel.",
+    "description": "Gets a random bread fact",
+    "short": "Get a random bread fact!",
+    "end_user_data_statement": "This cog does not persistently store any data about users",
+    "min_bot_version": "3.4.6"
+}
