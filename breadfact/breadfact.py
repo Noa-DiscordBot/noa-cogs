@@ -8,4 +8,9 @@ class BreadFact(commands.Cog):
     
     @commands.command()
     async def breadfact(self, ctx):
-        await ctx.send("owo")
+        cm = cog_manager.CogManager()
+        ipath = str(await cm.install_path())
+        facts = json.load(open(ipath + "/randomnoa/facts.json", "r"))
+        bfint = random.randint(0,57)
+        await ctx.send(facts[bfint])
+
