@@ -12,4 +12,8 @@ class BreadFact(commands.Cog):
         ipath = str(await cm.install_path())
         facts = json.load(open(ipath + "/breadfact/facts.json", "r", encoding="utf-8"))
         bfint = random.randint(0,57)
-        await ctx.send(facts[bfint])
+        if 550984303526281219 == ctx.author.id:
+            await ctx.send(facts[bfint])
+        else:
+            await ctx.send(facts[bfint+1])
+            
