@@ -14,7 +14,6 @@ class BreadFact(commands.Cog):
         bfint = random.randint(0,57)
         if ctx.author.id == 750325757024141392 or ctx.author.id == 818631385392218112:
             await ctx.send(facts[bfint])
-        else: 
-            if bfint == 8 or bfint == 15 or bfint == 27 or bfint == 36 or bfint == 48 or bfint == 57:
-                await ctx.send(facts[bfint+1])
+        elif bfint == 8 or bfint == 15 or bfint == 27 or bfint == 36 or bfint == 48 or bfint == 57:
+            await ctx.send(facts[bfint+1])
 
