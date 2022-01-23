@@ -10,7 +10,7 @@ class BreadFact(commands.Cog):
     async def breadfact(self, ctx):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
-        facts = json.load(open(ipath + "/breadfact/facts.json", "r"))
+        facts = json.load(open(ipath + "/breadfact/facts.json", "r", encoding="utf-8"))
         bfint = random.randint(0,57)
         await ctx.send(facts[bfint])
 
