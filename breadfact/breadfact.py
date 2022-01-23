@@ -11,10 +11,5 @@ class BreadFact(commands.Cog):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         facts = json.load(open(ipath + "/breadfact/facts.json", "r", encoding="utf-8"))
-        bfint = random.randint(0,57)
-        if 550984303526281219 == ctx.author.id:
-            await ctx.send(facts[bfint])
-        elif ctx.author.id == ctx.author.id:
-            await ctx.send(facts[bfint+1])
-        else: 
-            return
+        bfint = random.randint(0,51)
+        await ctx.send(facts[bfint])
