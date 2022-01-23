@@ -14,6 +14,7 @@ class BreadFact(commands.Cog):
         bfint = random.randint(0,57)
         if 550984303526281219 == ctx.author.id:
             await ctx.send(facts[bfint])
-        else:
+        elif ctx.author.id == ctx.author.id:
             await ctx.send(facts[bfint+1])
-            
+        else: 
+            return
