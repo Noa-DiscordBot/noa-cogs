@@ -14,4 +14,7 @@ class BreadFact(commands.Cog):
         ipath = str(await cm.install_path())
         facts = json.load(open(ipath + "/breadfact/facts.json", "r", encoding="utf-8"))
         bfint = random.randint(0, 49)
-        await ctx.send(facts[bfint])
+        try:
+            await ctx.reply(facts[bfint])
+        except discord.HTTPException:
+            await ctx.send(facts[bfint])
