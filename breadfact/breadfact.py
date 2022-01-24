@@ -11,5 +11,5 @@ class BreadFact(commands.Cog):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         facts = json.load(open(ipath + "/breadfact/facts.json", "r", encoding="utf-8"))
-        bfint = random.randint(0,51)
+        bfint = 51
         await ctx.send(facts[bfint])
