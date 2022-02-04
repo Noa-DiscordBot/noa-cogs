@@ -5,7 +5,7 @@ import random, discord, json
 class BreadFact(commands.Cog):
     """Sends a random bread fact!"""
     __author__ = "JeffJrShim#2396, ＜－モカアオバ#6142"
-    __version__ = "0.1.1"
+    __version__ = "0.1.2"
 
     def __init__(self, bot):
         self.bot = bot
