@@ -15,6 +15,6 @@ class BreadFact(commands.Cog):
         facts = json.load(open(ipath + "/breadfact/facts.json", "r", encoding="utf-8"))
         bfint = random.randint(0, 49)
         try:
-            await ctx.reply(facts[bfint])
+            await ctx.reply(facts[bfint], mention_author=False)
         except discord.HTTPException:
             await ctx.send(facts[bfint])
