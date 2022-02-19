@@ -10,7 +10,7 @@ class RandomNoa(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         
-    async def random_noa():
+    async def random_noa(self):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         # cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
