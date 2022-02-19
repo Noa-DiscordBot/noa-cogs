@@ -14,7 +14,7 @@ class RandomNoa(commands.Cog):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         # cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
-        with open(ipath + "/randomnoa/cards.json", "r") as noa:
+        with open(ipath + "/randomnoa/cards.json", "r",  encoding="utf-8") as noa:
             data = json.load(noa)
             noas = data["noas"]
             random_index = str(random.randint(0, len(noas)-1))
