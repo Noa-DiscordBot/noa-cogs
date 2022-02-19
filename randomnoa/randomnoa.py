@@ -17,7 +17,7 @@ class RandomNoa(commands.Cog):
         with open(ipath + "/randomnoa/cards.json", "r") as noa:
             data = json.load(noa)
             noas = data["noas"]
-            random_index = random.randint(0, len(noas)-1)
+            random_index = str(random.randint(0, len(noas)-1))
             return_data = {
                 "title": noas[random_index]["title"],
                 "url": noas[random_index]["image_url"],
