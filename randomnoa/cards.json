@@ -1,30 +1,120 @@
-[
-    "https://i.ibb.co/gyLRVCf/noa1star.png",
-    "https://i.ibb.co/zQTQMVh/noa2star.png",
-    "https://i.ibb.co/B4V3hYf/noa2starfirstanniversary.png",
-    "https://i.ibb.co/16W96zr/noa3starinitial.png",
-    "https://i.ibb.co/mHZQDFR/noa3starinitial-t.png",
-    "https://i.ibb.co/W3SxhHh/noa3stard4fes.png",
-    "https://i.ibb.co/wMycFKV/noa3stard4fes-t.png",
-    "https://i.ibb.co/1MyW8sR/noa3starmonhun.png",
-    "https://i.ibb.co/47sRfZj/noa3starmonhun-t.png",
-    "https://i.ibb.co/Yh2NYvW/noa3starteamcevent.png",
-    "https://i.ibb.co/LJWHthY/noa3starteamcevent-t.png",
-    "https://i.ibb.co/hW91cM4/noa4starinitial.png",
-    "https://i.ibb.co/554b9wy/noa4starinitial-t.png",
-    "https://i.ibb.co/ThSRvzd/noa4starlantern.png",
-    "https://i.ibb.co/5195Zyt/noa4starlantern-t.png",
-    "https://i.ibb.co/XjRt3sC/noa4starwhiteday.png",
-    "https://i.ibb.co/tZdK2Sf/noa4starwhiteday-t.png",
-    "https://i.ibb.co/HCv4rrc/noa4stargotoubun.png",
-    "https://i.ibb.co/hCHGkvf/noa4stargotoubun-t.png",
-    "https://i.ibb.co/SRp0Sqm/noa4startanabata.png",
-    "https://i.ibb.co/hdsvF8S/noa4startanabata-t.png",
-    "https://i.ibb.co/TLwFN5G/noa4starbirthday.png",
-    "https://i.ibb.co/mb2QRdz/noa4starbirthday-t.png",
-    "https://i.ibb.co/GCFH5mp/noaSP.png",
-    "https://i.ibb.co/BnWtGjY/Love-Injection.jpg",
-    "https://i.ibb.co/pPNcCCK/Love-Injection-T.jpg",
-    "https://i.ibb.co/gRSqMQp/1000-un.png", 
-    "https://i.ibb.co/MsMz0jY/1000.png" 
-]
+{
+    "noas": {
+        "1": {
+            "image_url": "https://i.ibb.co/gyLRVCf/noa1star.png",
+            "desc": "Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n"
+        },
+        "2": {
+            "image_url": "https://i.ibb.co/zQTQMVh/noa2star.png",
+            "desc": "Card Name: DJ-LIVE! \n Rarity: 2⭐\n Untrained or Trained: None \n"
+        },
+        "3": {
+            "image_url": "https://i.ibb.co/B4V3hYf/noa2starfirstanniversary.png",
+            "desc": "Card Name: DJ-MIX! \n Rarity: 2⭐\n Untrained or Trained: None \n"
+        },
+        "4": {
+            "image_url": "https://i.ibb.co/16W96zr/noa3starinitial.png",
+            "desc": "Card Name: CuteBringer \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+        },
+        "5": {
+            "image_url": "https://i.ibb.co/mHZQDFR/noa3starinitial-t.png",
+            "desc": "Card Name: CuteBringer \n Rarity: 3⭐\n Untrained or Trained: Trained \n"
+        },
+        "6": {
+            "image_url": "https://i.ibb.co/W3SxhHh/noa3stard4fes.png",
+            "desc": "Card Name: Melty Smile \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+        },
+        "7": {
+            "image_url": "https://i.ibb.co/wMycFKV/noa3stard4fes-t.png",
+            "desc": "Card Name: Melty Smile \n Rarity: 3⭐\n Untrained or Trained: Trained \n"
+        },
+        "8": {
+            "image_url": "https://i.ibb.co/1MyW8sR/noa3starmonhun.png",
+            "desc": "Card Name: EXウルムーα\n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+        },
+        "9": {
+            "image_url": "https://i.ibb.co/47sRfZj/noa3starmonhun-t.png",
+            "desc": "Card Name: EXウルムーα \n Rarity: 3⭐\n Untrained or Trained: Trained \n"
+        },
+        "10": {
+            "image_url": "https://i.ibb.co/Yh2NYvW/noa3starteamcevent.png",
+            "desc": "Card Name: Enchanted Lamp \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+        },
+        "11": {
+            "image_url": "https://i.ibb.co/LJWHthY/noa3starteamcevent-t.png",
+            "desc": "Card Name: Enchanted Lamp \n Rarity: 3⭐\n Untrained or Trained: Trained  \n"
+        },
+        "12": {
+            "image_url": "https://i.ibb.co/hW91cM4/noa4starinitial.png",
+            "desc": "Card Name: Skydrifter \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n"
+        },
+        "13": {
+            "image_url": "https://i.ibb.co/554b9wy/noa4starinitial-t.png",
+            "desc":  "Card Name: Skydrifter \n Rarity: 4⭐\n Untrained or Trained: Trained  \n"
+        },
+        "14": {
+            "image_url": "https://i.ibb.co/ThSRvzd/noa4starlantern.png",
+            "desc": "Card Name: Fantastic Lantern \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n"
+        },
+        "15": {
+            "image_url": "https://i.ibb.co/5195Zyt/noa4starlantern-t.png",
+            "desc": "Card Name: Fantastic Lantern \n Rarity: 4⭐\n Untrained or Trained: Trained  \n"
+        },
+        "16": {
+            "image_url": "https://i.ibb.co/XjRt3sC/noa4starwhiteday.png",
+            "desc": "Card Name: Sweet Cookie \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n"
+        },
+        "17": {
+            "image_url": "https://i.ibb.co/tZdK2Sf/noa4starwhiteday-t.png",
+            "desc": "Card Name: Sweet Cookie \n Rarity: 4⭐\n Untrained or Trained: Trained  \n"
+        },
+        "18": {
+            "image_url": "https://i.ibb.co/HCv4rrc/noa4stargotoubun.png",
+            "desc": "Card Name: \n - English name: Brilliant Hydrangea\n - Japanese name: 燦爛たるあじさい \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n "
+        },
+        "19": {
+            "image_url": "https://i.ibb.co/hCHGkvf/noa4stargotoubun-t.png",
+            "desc": "Card Name: \n - English name: Brilliant Hydrangea\n - Japanese name: 燦爛たるあじさい \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+        },
+        "20": {
+            "image_url": "https://i.ibb.co/SRp0Sqm/noa4startanabata.png",
+            "desc": "Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Untrained \n"
+        },
+        "21": {
+            "image_url": "https://i.ibb.co/hdsvF8S/noa4startanabata-t.png",
+            "desc": "Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+        },
+        "22": {
+            "image_url": "https://i.ibb.co/TLwFN5G/noa4starbirthday.png",
+            "desc": "Card Name: Birthday Noa (1st Set) \n Rarity: 4⭐\n Untrained or Trained: Untrained \n"
+        },
+        "23": {
+            "image_url": "https://i.ibb.co/mb2QRdz/noa4starbirthday-t.png",
+            "desc": "Card Name: Birthday Noa (1st Set) \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+        },
+        "24": {
+            "image_url": "https://i.ibb.co/GCFH5mp/noaSP.png",
+            "desc": "Card Name: 1st Anniversary \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+        },
+        "25": {
+            "image_url": "https://i.ibb.co/BnWtGjY/Love-Injection.jpg",
+            "desc": "Card Name: Love♡Injection \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+        },
+        "26": {
+            "image_url": "https://i.ibb.co/pPNcCCK/Love-Injection-T.jpg",
+            "desc": "Card Name: Love♡Injection \n Rarity: 3⭐\n Untrained or Trained: Trained"
+        },
+        "27": {
+            "image_url": "https://i.ibb.co/gRSqMQp/1000-un.png",
+            "desc": "Card Name: Promised Bench \n Rarity: 4⭐\n Untrained or Trained: Untrained \n"
+        },
+        "28": {
+            "image_url": "https://i.ibb.co/MsMz0jY/1000.png",
+            "desc": "Card Name: Promised Bench \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+        },
+        "29": {
+            "image_url": "https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif",
+            "desc": "Card Name: Pingu Hitting Those Moves \n Rarity: 20:star: \n Untrained or Trained: Trained (obviously?) \n"
+        }
+    }
+}
