@@ -40,4 +40,4 @@ class RandomNoa(commands.Cog):
             color=await ctx.embed_colour()
         )
         embed.set_image(url=data["url"])
-        await ctx.reply(embed=embed, menntion_author=False)
+        await ctx.reply(embed=embed, mention_author=False)
