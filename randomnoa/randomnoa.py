@@ -19,7 +19,7 @@ class RandomNoa(commands.Cog):
             noas = data["noas"]
             random_index = random.randint(0, len(noas)-1)
             return_data = {
-                "title",
+                "title": noas[random_index]["title"],
                 "url": noas[random_index]["image_url"],
                 "desc": noas[random_index]["desc"]
             }
