@@ -15,11 +15,11 @@ class RandomNoa(commands.Cog):
         ipath = str(await cm.install_path())
         # cards = json.load(open(ipath + "/randomnoa/cards.json", "r"))
         with open(ipath + "/randomnoa/cards.json", "r") as noa:
-            data = json.load(noa).copy()
+            data = json.load(noa)
             noas = data["noas"]
             random_index = random.randint(0, len(noas)-1)
             return_data = {
-                "number": noas[random_index],
+                "title",
                 "url": noas[random_index]["image_url"],
                 "desc": noas[random_index]["desc"]
             }
@@ -34,23 +34,10 @@ class RandomNoa(commands.Cog):
         # noachoice = random.randint(1, 29)
 
         data =  await self.random_noa()
-        if not data["number"] == 29:
-            embed = discord.Embed(
-                title="Here is your random Noa!",
-                description=data["desc"],
-                color=await ctx.embed_colour()
-            )
-            embed.set_image(url=data["url"])
-
-            await ctx.reply(embed=embed, menntion_author=False)
-
-        else:
-            embed = discord.Embed(
-                title="Is that.... a prank?",
-                description=data["desc"],
-                color=await ctx.embed_color(),
-            )
-            embed.set_image(
-                url=data["url"]
-            )
-            await ctx.reply(embed=embed, mention_author=False)
+        embed = discord.Embed(
+            title=data["title"],
+            description=data["desc"],
+            color=await ctx.embed_colour()
+        )
+        embed.set_image(url=data["url"])
+        await ctx.reply(embed=embed, menntion_author=False)
