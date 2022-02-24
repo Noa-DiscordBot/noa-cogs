@@ -40,4 +40,7 @@ class RandomNoa(commands.Cog):
             color=await ctx.embed_colour()
         )
         embed.set_image(url=data["url"])
-        await ctx.reply(embed=embed, mention_author=False)
+        try:
+            await ctx.reply(embed=embed, mention_author=False)
+        except discord.HTTPException:
+            await ctx.send(embed=embed)
