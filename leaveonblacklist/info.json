@@ -7,4 +7,5 @@
     "short": "Leave if owner is blacklisted",
     "end_user_data_statement": "This cog does not persistently store any data about users",
     "min_bot_version": "3.4.0"
+    "hidden": true
 }
