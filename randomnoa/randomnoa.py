@@ -7,6 +7,9 @@ import json
 class RandomNoa(commands.Cog):
     """Sends a random Noa card from the official D4DJ Groovy Mix game."""
 
+    __author__ = ["JeffJrShim"]
+    __version__ = "1.0.0"
+
     def __init__(self, bot):
         self.bot = bot
         

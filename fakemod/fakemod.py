@@ -5,7 +5,14 @@ from datetime import datetime
 
 class FakeMod(commands.Cog):
     """Fake moderation commands"""
+    __author__ = ["JeffJrShim", "Onii-chan"]
+    __version__ = "1.0.0"
 
+    def format_help_for_context(self, ctx: commands.Context) -> str:
+        """Thanks Sinbad!"""
+        pre_processed = super().format_help_for_context(ctx)
+        return f"{pre_processed}\n\nAuthors: {', '.join(self.__author__)}\nCog Version: {self.__version__}"
+        
     async def initialize(self):
         await self.register_casetypes()
 

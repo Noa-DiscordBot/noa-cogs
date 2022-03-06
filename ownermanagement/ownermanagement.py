@@ -9,9 +9,17 @@ import random
 class OwnerManagement(commands.Cog):
     """Owner management utilities."""
 
+    __author__ = ["JeffJrShim"]
+    __version__ = "1.0.0"
+
     def __init__(self, bot):
         self.bot = bot
         self.default_owners = self.bot.owner_ids.copy()
+
+    def format_help_for_context(self, ctx: commands.Context) -> str:
+        """Thanks Sinbad!"""
+        pre_processed = super().format_help_for_context(ctx)
+        return f"{pre_processed}\n\nAuthors: {', '.join(self.__author__)}\nCog Version: {self.__version__}"
     
     @commands.group(invoke_without_command="True")
     @commands.is_owner()

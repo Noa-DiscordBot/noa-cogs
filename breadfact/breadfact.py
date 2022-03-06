@@ -9,6 +9,11 @@ class BreadFact(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
+    
+    def format_help_for_context(self, ctx: commands.Context) -> str:
+        """Thanks Sinbad!"""
+        pre_processed = super().format_help_for_context(ctx)
+        return f"{pre_processed}\n\nAuthors: {', '.join(self.__author__)}\nCog Version: {self.__version__}"
 
     @commands.command()
     async def breadfact(self, ctx):
