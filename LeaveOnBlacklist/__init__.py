@@ -1,4 +1,4 @@
-from .LeaveOnBlacklist import LeaveOnBlacklist
+from .leaveonblacklist import LeaveOnBlacklist
       
 
 def setup(bot):
