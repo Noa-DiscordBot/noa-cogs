@@ -2,7 +2,7 @@ from redbot.core.commands import *
 
 class LeaveOnBlacklist(Cog):
     
-  __author__ = ["JeffJrShim", "Onii-chan"]
+  __author__ = ["JeffJrShim", "Guacaplushy"]
   __version__ = "1.0.0"
 
   def __init__(self, bot):
