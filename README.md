@@ -11,8 +11,13 @@ and, to install cogs from this repository: <br>
 <details>
 <summary>Click to see the current cog list!</summary>
 <br>
--FakeMod <br>   - Fake moderation commands to troll with. <br>
--RandomD4DJ <br> - Shows a random D4DJ card from the official D4DJ Groovy Mix game. (NO leaks though, cuz leaks suck)
+|     Cogs list    | Description                                                                                               | Version |           Authors          | Stable? | Hidden? |
+|:----------------:|-----------------------------------------------------------------------------------------------------------|:-------:|:--------------------------:|:-------:|:-------:|
+|     BreadFact    | Sends a random breadfact                                                                                  |  0.1.0  | JeffJrShim, Peakyyyyy#6142 |    ❌    |    ❌    |
+|      FakeMod     | Fake moderation events, for staff to play around with                                                     |  1.0.0  |   JeffJrShim, Guacaplushy  |    ✅    |    ❌    |
+| LeaveOnBlacklist | The bot will leave the server if the server owner is blacklisted The cog must be loaded for this to work. |  1.0.0  |   JeffJrShim, Guacaplushy  |    ✅    |    ✅    |
+|  OwnerManagement | Manage bot owners, easily. Please read the big install message provided when installing this cog.         |  1.0.0  |         JeffJrShim         |    ✅    |    ❌    |
+|     RandomNoa    | Fetch an official Noa Fukushima card, from the D4DJ Groovy Mix game.                                      |  1.0.0  |    JeffJrShim, Onii-chan   |    ✅    |    ❌    |
 </details>
 
 # Contributing <br>
