@@ -1,5 +1,5 @@
 # Noa Cogs <br>
-Hi! Welcome to Noa's cog repository. This repository is Noa's collection of cogs, for [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot). This repo is maintained by JeffJrShim#2396 and Guacaplushy#0577. <br><br>
+Hi! Welcome to Noa's cog repository. This repository is Noa's collection of cogs, for [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot). This repo is maintained by JeffJrShim#2396, Guacaplushy#0577 and Onii-chan#3920. <br><br>
 **Note that this repository is not approved by the Cog-Creators (yet). Anything that goes wrong with your bot after using this, is not my responsibility.** <br><br>
 If you do need anything, don't hesitate to head to the server [here](https://discord.gg/RSAetqdhRU)! See you then!
 # Installation <br>
