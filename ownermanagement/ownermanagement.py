@@ -48,7 +48,7 @@ class OwnerManagement(commands.Cog):
         remmsg=f"{user} is no longer a bot owner."
         getoutmsg=f"{user} is a default owner, and cannot be removed."
         if user.id in self.default_owners:
-            await ctx.send(getoutmsg, reference=ctx.message.to_reference()
+            await ctx.send(getoutmsg, reference=ctx.message.to_reference())
         else:
             self.bot.owner_ids.remove(user.id)
             await ctx.tick()
