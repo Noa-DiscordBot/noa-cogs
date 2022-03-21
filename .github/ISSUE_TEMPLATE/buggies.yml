@@ -8,6 +8,12 @@ body:
       value: |
         ### Thanks for taking the time to make an issue!
         If you want general support please ask in my server: https://discord.gg/RSAetqdhRU
+  - type: input
+    id: discord
+    attributes:
+      description: "To either contact you to ask you more about the details, and/or to inform you that the bug has been fixed."
+    validations:
+      required: true
   - type: dropdown
     id: cog-name
     attributes:
