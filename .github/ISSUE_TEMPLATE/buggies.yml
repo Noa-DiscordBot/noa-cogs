@@ -11,9 +11,10 @@ body:
   - type: input
     id: discord
     attributes:
-      description: "To either contact you to ask you more about the details, and/or to inform you that the bug has been fixed."
+      label: "Discord User Information"
+      description: "To either contact you to ask you more about the details, and/or to inform you that the bug has been fixed. Feel free to leave this blank if you don't feel like sharing it."
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: cog-name
     attributes:
