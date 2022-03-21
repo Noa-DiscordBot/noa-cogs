@@ -1,5 +1,6 @@
 description: "File a bug report"
-labels: ["type: bug"]
+labels: [bug]
+assignees: "JeffJrShim"
 name: "Bug Report"
 body:
   - type: markdown
@@ -7,11 +8,16 @@ body:
       value: |
         ### Thanks for taking the time to make an issue!
         If you want general support please ask in my server: https://discord.gg/RSAetqdhRU
-  - type: input
+  - type: dropdown
     id: cog-name
     attributes:
       label: "What cog is this bug report for?"
-      placeholder: "Enter the name of the cog"
+      options:
+        - BreadFact
+        - FakeMod
+        - LeaveOnBlacklist
+        - OwnerManagement
+        - RandomNoa
     validations:
       required: true
   - type: textarea
