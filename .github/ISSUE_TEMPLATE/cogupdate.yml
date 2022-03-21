@@ -1,19 +1,24 @@
 description: "File a cog update. Not really for regular users, so ignore this."
-labels: ["type: cog updates"]
-name: "Cog Updates!"
+labels: ["cog updates"]
+name: "Cog Updates"
 assignees: JeffJrShim
 body:
-  - type: input
+  - type: dropdown
     id: cog-name
     attributes:
-      label: "What cog is this update for?"
-      placeholder: "Enter the name of the cog"
+      label: "What cog will be updated with this issue?"
+      options:
+        - BreadFact
+        - FakeMod
+        - LeaveOnBlacklist
+        - OwnerManagement
+        - RandomNoa
     validations:
       required: true
   - type: textarea
     id: desc
     attributes:
-      label: "Describe the update in as much detail as possible"
+      label: "Describe the update in as much detail as possible. Include changes and what not."
       placeholder: "The more information the better!"
     validations:
       required: true
