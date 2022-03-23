@@ -71,7 +71,7 @@ class RandomNoa(commands.Cog):
         await ctx.send("The new value has been set.")
     
     @randomnoaset.command()
-    async def rigged(self, ctx, card: str):
+    async def riggedcard(self, ctx, card: str):
         """Choose the rigged card"""
         await self.config.guild(ctx.guild).cards(card)
         await ctx.send("The new card value has been set.")
