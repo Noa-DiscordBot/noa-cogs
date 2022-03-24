@@ -67,18 +67,21 @@ class RandomNoa(commands.Cog):
         """Setup RandomNoa."""
         pass
     
+    @commands.is_owner()
     @randomnoaset.command()
     async def rigged(self, ctx, rig: bool =  False):
         """Toggle the rigged random noa."""
         await self.config.rigged.set(rig)
         await ctx.send("The new value has been set.")
-    
+
+    @commands.is_owner()
     @randomnoaset.command()
     async def riggedcard(self, ctx, card: int):
         """Choose the rigged card"""
         await self.config.card(card)
         await ctx.send("The new card value has been set.")
-
+        
+    @commands.is_owner()
     @randomnoaset.command()
     async def view(self, ctx):
         """View configuration settings, will make nicer when it actually works"""
