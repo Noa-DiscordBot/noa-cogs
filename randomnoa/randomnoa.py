@@ -13,8 +13,11 @@ class RandomNoa(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.config = Config.get_conf(self, identifier=694641)
-        default_guild = {"rigged": False, "cards": ""}
-        self.config.register_guild(**default_guild)
+        default_config = {
+            "rigged": False,
+            "card": None
+        }
+        self.config.register_global(**default_config)
 
     async def random_noa(self):
         cm = cog_manager.CogManager()
@@ -22,9 +25,9 @@ class RandomNoa(commands.Cog):
         with open(ipath + "/randomnoa/cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
             noas = data["noas"]
-            rig_val = await self.config.guild(ctx.guild).rigged()
-            card_no = await self.config.guild(ctx.guild).cards()
-            if await bot.is_owner(ctx.author) == True and rig_val == True:
+            rigged = await self.config.rigged()
+            card_no = await self.config.cards()
+            if await bot.is_owner(ctx.author) == True and rigged == True:
                 index = str(card_no)
                 return_data = {
                     "title": noas[index]["title"],
@@ -65,15 +68,15 @@ class RandomNoa(commands.Cog):
         pass
     
     @randomnoaset.command()
-    async def rigged(self, ctx, rig: bool):
+    async def rigged(self, ctx, rig: bool =  False):
         """Toggle the rigged random noa."""
-        await self.config.guild(ctx.guild).rigged.set(rig)
+        await self.config.rigged.set(rig)
         await ctx.send("The new value has been set.")
     
     @randomnoaset.command()
-    async def riggedcard(self, ctx, card: str):
+    async def riggedcard(self, ctx, card: Int):
         """Choose the rigged card"""
-        await self.config.guild(ctx.guild).cards(card)
+        await self.config.card(card)
         await ctx.send("The new card value has been set.")
 
     @randomnoaset.command()
