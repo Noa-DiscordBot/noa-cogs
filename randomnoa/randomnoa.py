@@ -79,6 +79,6 @@ class RandomNoa(commands.Cog):
     @randomnoaset.command()
     async def view(self, ctx):
         """View configuration settings, will make nicer when it actually works"""
-        riggedval = await self.config.guild(ctx.guild).chances()
+        riggedval = await self.config.guild(ctx.guild).rigged()
         cardno = await self.config.guild(ctx.guild).cards()
         await ctx.send(f"```Rigged?: {riggedval}\n\n Card No: {cardno}```")
