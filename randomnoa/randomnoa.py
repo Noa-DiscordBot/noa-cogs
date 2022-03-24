@@ -27,7 +27,7 @@ class RandomNoa(commands.Cog):
             noas = data["noas"]
             rigged = await self.config.rigged()
             card_no = await self.config.cards()
-            if await bot.is_owner(ctx.author) == True and rigged == True:
+            if await self.bot.is_owner(ctx.author) == True and rigged == True:
                 index = str(card_no)
                 return_data = {
                     "title": noas[index]["title"],
