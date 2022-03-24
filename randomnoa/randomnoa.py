@@ -49,7 +49,7 @@ class RandomNoa(commands.Cog):
         Sends a random Noa card from the official D4DJ Groovy Mix game. (JP version.)
         """
 
-        data = await self.random_noa()
+        data = await self.random_noa(ctx)
         embed = discord.Embed(
             title=data["title"],
             description=data["desc"],
