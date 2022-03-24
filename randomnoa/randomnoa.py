@@ -19,7 +19,7 @@ class RandomNoa(commands.Cog):
         }
         self.config.register_global(**default_config)
 
-    async def random_noa(self):
+    async def random_noa(self, ctx):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
         with open(ipath + "/randomnoa/cards.json", "r", encoding="utf-8") as noa:
@@ -74,7 +74,7 @@ class RandomNoa(commands.Cog):
         await ctx.send("The new value has been set.")
     
     @randomnoaset.command()
-    async def riggedcard(self, ctx, card: Int):
+    async def riggedcard(self, ctx, card: int):
         """Choose the rigged card"""
         await self.config.card(card)
         await ctx.send("The new card value has been set.")
