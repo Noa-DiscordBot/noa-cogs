@@ -84,4 +84,4 @@ class RandomNoa(commands.Cog):
         """View configuration settings, will make nicer when it actually works"""
         riggedval = await self.config.rigged()
         cardno = await self.config.card()
-        await ctx.send(f"```ini\n[  Toggled:  ] {riggedval}\n\n[  Card No (only applicable if Toggled is True):  ] {cardno} (See JSON file for more information.)```")
+        await ctx.send(f"```ini\n[  Toggled:  ] {riggedval}\n[  Card No (if rigged):  ] {cardno} (See JSON file for more information.)```")
