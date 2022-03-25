@@ -26,7 +26,7 @@ class RandomNoa(commands.Cog):
             data = json.load(noa)
             noas = data["noas"]
             rigged = await self.config.rigged()
-            card_no = await self.config.cards()
+            card_no = await self.config.card()
             if await self.bot.is_owner(ctx.author) == True and rigged == True:
                 index = str(card_no)
                 return_data = {
