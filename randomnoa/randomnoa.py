@@ -19,7 +19,7 @@ class RandomNoa(commands.Cog):
     async def random_noa(self, ctx):
         cm = cog_manager.CogManager()
         ipath = str(await cm.install_path())
-        with open(bundled_data_path(self)/"cards.json", "r", encoding="utf-8") as noa:
+        with open(ipath + "/randomnoa/cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
             noas = data["noas"]
             riggedornah = await self.config.rigged()
