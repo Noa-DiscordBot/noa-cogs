@@ -52,7 +52,7 @@ class FakeMod(commands.Cog):
     @commands.mod_or_permissions()
     async def bam(self, ctx, user: discord.Member, *, reason: str = None):
         """Bams a user!"""
-        case = await modlog.create_case(
+        await modlog.create_case(
             ctx.bot,
             ctx.guild,
             datetime.now(),
@@ -69,7 +69,7 @@ class FakeMod(commands.Cog):
     @commands.mod_or_permissions()
     async def keck(self, ctx, user: discord.Member, *, reason: str = None):
         """Kecks a user!"""
-        case = await modlog.create_case(
+        await modlog.create_case(
             ctx.bot,
             ctx.guild,
             datetime.now(),
@@ -86,7 +86,7 @@ class FakeMod(commands.Cog):
     @commands.mod_or_permissions()
     async def moot(self, ctx, user: discord.Member, *, reason: str = None):
         """Moots a user!"""
-        case = await modlog.create_case(
+        await modlog.create_case(
             ctx.bot,
             ctx.guild,
             datetime.now(),
@@ -103,7 +103,7 @@ class FakeMod(commands.Cog):
     @commands.mod_or_permissions()
     async def warm(self, ctx, user: discord.Member, *, reason: str = None):
         """Warms a user!"""
-        case = await modlog.create_case(
+        await modlog.create_case(
             ctx.bot,
             ctx.guild,
             datetime.now(),
