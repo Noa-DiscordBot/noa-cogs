@@ -25,9 +25,9 @@ class RandomNoa(commands.Cog):
         with open(ipath + "/randomnoa/cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
             noas = data["noas"]
-            rigged = await self.config.rigged()
+            riggedornah = await self.config.rigged()
             card_no = await self.config.card()
-            if await self.bot.is_owner(ctx.author) == True and rigged == True:
+            if await self.bot.is_owner(ctx.author) == True and riggedornah == True:
                 index = str(card_no)
                 return_data = {
                     "title": noas[index]["title"],
