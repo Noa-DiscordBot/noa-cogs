@@ -13,10 +13,7 @@ class RandomNoa(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.config = Config.get_conf(self, identifier=694641)
-        default_config = {
-            "rigged": False,
-            "card": None
-        }
+        default_config = {"rigged": False, "card": None}
         self.config.register_global(**default_config)
 
     async def random_noa(self, ctx):
@@ -33,7 +30,7 @@ class RandomNoa(commands.Cog):
                     "title": noas[index]["title"],
                     "url": noas[index]["image_url"],
                     "desc": noas[index]["desc"],
-                    }
+                }
             else:
                 random_index = str(random.randint(1, len(noas)))
                 return_data = {
@@ -66,7 +63,7 @@ class RandomNoa(commands.Cog):
     async def randomnoaset(self, ctx):
         """Setup RandomNoa."""
         pass
-    
+
     @commands.is_owner()
     @randomnoaset.command()
     async def rigged(self, ctx, rig: bool = False):
@@ -80,7 +77,7 @@ class RandomNoa(commands.Cog):
         """Choose the rigged card"""
         await self.config.card.set(card)
         await ctx.send("The new card value has been set.")
-        
+
     @commands.is_owner()
     @randomnoaset.command()
     async def view(self, ctx):
