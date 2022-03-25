@@ -34,7 +34,7 @@ class RandomNoa(commands.Cog):
                     "url": noas[index]["image_url"],
                     "desc": noas[index]["desc"],
                     }
-           else:
+            else:
                 random_index = str(random.randint(1, len(noas)))
                 return_data = {
                     "title": noas[random_index]["title"],
