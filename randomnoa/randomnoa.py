@@ -27,20 +27,20 @@ class RandomNoa(commands.Cog):
             noas = data["noas"]
             rigged = await self.config.rigged()
             card_no = await self.config.card()
-            if await self.bot.is_owner(ctx.author) == True and rigged == True:
-                index = str(card_no)
-                return_data = {
-                    "title": noas[index]["title"],
-                    "url": noas[index]["image_url"],
-                    "desc": noas[index]["desc"],
+         #   if await self.bot.is_owner(ctx.author) == True and rigged == True:
+            index = str(card_no)
+            return_data = {
+                "title": noas[index]["title"],
+                "url": noas[index]["image_url"],
+                "desc": noas[index]["desc"],
                 }
-            else:
-                random_index = str(random.randint(1, len(noas)))
-                return_data = {
-                    "title": noas[random_index]["title"],
-                    "url": noas[random_index]["image_url"],
-                    "desc": noas[random_index]["desc"],
-                }
+           # else:
+       #         random_index = str(random.randint(1, len(noas)))
+       #         return_data = {
+       #             "title": noas[random_index]["title"],
+       #             "url": noas[random_index]["image_url"],
+       #             "desc": noas[random_index]["desc"],
+       #         }
             return return_data
 
     @commands.command()
