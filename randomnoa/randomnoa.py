@@ -83,5 +83,5 @@ class RandomNoa(commands.Cog):
     async def view(self, ctx):
         """View configuration settings, will make nicer when it actually works"""
         riggedval = await self.config.rigged()
-        cardno = await self.config.cards()
+        cardno = await self.config.card()
         await ctx.send(f"```yaml\nToggled: {riggedval}\n\nCard No: {cardno}```")
