@@ -74,7 +74,10 @@ class RandomNoa(commands.Cog):
     @randomnoaset.command()
     async def riggedcard(self, ctx, card: int):
         """Choose the rigged card"""
-        await self.config.card.set(card)
+        if card > len(noas):
+            return await ctx.send("No")
+        else:    
+            await self.config.card.set(card)
         await ctx.send("The new card value has been set.")
 
     @commands.is_owner()
