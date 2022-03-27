@@ -77,8 +77,8 @@ class RandomNoa(commands.Cog):
         with open(bundled_data_path(self) / "cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
             noas = data["noas"]    
-        if card > len(noas):
-            return await ctx.send("No")
+        if card > len(noas) or card < len(noas):
+            return await ctx.send(f"The value cannot be less then 1 or more then {len(noas)}")
         else:    
             await self.config.card.set(card)
         await ctx.send("The new card value has been set.")
