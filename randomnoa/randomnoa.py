@@ -74,6 +74,9 @@ class RandomNoa(commands.Cog):
     @randomnoaset.command()
     async def riggedcard(self, ctx, card: int):
         """Choose the rigged card"""
+        with open(bundled_data_path(self) / "cards.json", "r", encoding="utf-8") as noa:
+            data = json.load(noa)
+            noas = data["noas"]    
         if card > len(noas):
             return await ctx.send("No")
         else:    
