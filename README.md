@@ -14,7 +14,7 @@ and, to install cogs from this repository: <br>
 | FakeMod | Fake moderation events, for staff to play around with | 1.0.0 | JeffJrShim, Guacaplushy | ✅ | ❌ |
 | LeaveOnBlacklist | The bot will leave the server if the server owner is blacklisted The cog must be loaded for this to work. | 1.0.0 | JeffJrShim, Guacaplushy | ✅ | ✅ |
 | OwnerManagement | Manage bot owners, easily. Please read the big install message provided when installing this cog. | 1.0.0 | JeffJrShim | ✅ | ❌ |
-| RandomNoa | Fetch an official Noa Fukushima card, from the D4DJ Groovy Mix game. | 1.0.2 | JeffJrShim, Onii-chan | ✅ | ❌ |
+| RandomNoa | Fetch an official Noa Fukushima card, from the D4DJ Groovy Mix game. | 1.1.0 | JeffJrShim, Onii-chan | ✅ | ❌ |
 
 # Contributing <br>
 You may submit pull requests and issues if you have found any weird bugs or unintended behaviour with my cogs. <br>
