@@ -18,7 +18,7 @@ class RandomNoa(commands.Cog):
         self.config.register_global(**default_config)
 
     async def random_noa(self, ctx):
-        with open(bundled_data_path(self) / cards.json, "r", encoding="utf-8") as noa:
+        with open(bundled_data_path(self) / "cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
             noas = data["noas"]
             rigged = await self.config.rigged()
