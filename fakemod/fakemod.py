@@ -114,3 +114,10 @@ class FakeMod(commands.Cog):
         )
 
         await ctx.send(f"Warned {user}.")
+    
+    @commands.group()
+    @commands.guild_only()
+    @commands.admin_or_permissions()
+    async def fakemodset(self, ctx):
+        pass
+    
