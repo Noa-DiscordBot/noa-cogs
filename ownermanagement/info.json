@@ -1,8 +1,9 @@
 {
-    "author": ["JeffJrShim#2396"],
+    "author": ["JeffJrShim"],
     "name": "OwnerManagement",
     "install_msg": "**__⚠READ THE FOLLOWING BEFORE PROCEEDING⚠__**\nThis cog has high security flaws, as this cog gives you the ability to add and remove owners with ease. Owners have access to EVERYTHING on the machine you host, only add people you trust to the owner list.\n\nBY PROCEEDING TO INSTALL AND LOAD THIS COG, YOU UNDERSTAND THAT THE OWNER OF THE REPOSITORY AND COGS (JeffJrShim#2396), HAVE NO RESPONSIBILITIES ON WHAT HAPPENS WITH YOUR RED INSTANCE, AFTER ADDING OR REMOVING OWNERS. THIS MAY INCLUDE DESTROYING YOUR BOT, RATELIMITING IT HEAVILY, OR GETTING YOUR PERSONAL FILES, STOLEN, OR IN WORST CASE SCENARIOS, YOUR BOT WILL BE **TERIMNATED** BY DISCORD.  **USE THIS COG AT YOUR OWN RISK.** IF YOU DO NOT AGREE TO THE STATEMENT ABOVE, __UNINSTALL THIS COG__ IMMEDIATELY.\n\nTo get started, run `[p]help owner`.",
     "description": "Manage bot owners, easily.",
+    "requirements": ["humanize"],
     "short": "Manage bot owners, easily.",
     "end_user_data_statement": "This cog does not persistently store data or metadata about users.",
     "min_bot_version": "3.4.0"

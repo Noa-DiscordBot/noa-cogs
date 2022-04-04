@@ -4,12 +4,13 @@ import random, discord, json
 
 class BreadFact(commands.Cog):
     """Sends a random bread fact!"""
-    __author__ = "JeffJrShim#2396, ＜－モカアオバ#6142"
+
+    __author__ = ["JeffJrShim, ＜－モカアオバ#6142"]
     __version__ = "0.1.2"
 
     def __init__(self, bot):
         self.bot = bot
-    
+
     def format_help_for_context(self, ctx: commands.Context) -> str:
         """Thanks Sinbad!"""
         pre_processed = super().format_help_for_context(ctx)
