@@ -3,4 +3,4 @@ from .ownermanagement import OwnerManagement
 
 async def setup(bot):
     cog = OwnerManagement(bot)
-    bot.add_cog(cog)
+    await bot.add_cog(cog)
