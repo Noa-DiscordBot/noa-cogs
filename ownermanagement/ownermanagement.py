@@ -22,6 +22,7 @@ class OwnerManagement(commands.Cog):
     async def owner(self, ctx):
         """Owner management commands"""
         if ctx.invoked_subcommand is None:
+            boi = ""
             for boi in list(self.bot.owner_ids):
                 boi = self.bot.get_user(boi)
                 bois = f"- {boi} (`{boi.id}`)"
