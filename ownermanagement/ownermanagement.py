@@ -1,6 +1,7 @@
 from redbot.core import commands
 import discord
 
+
 class OwnerManagement(commands.Cog):
     """Owner management utilities."""
 
@@ -25,7 +26,9 @@ class OwnerManagement(commands.Cog):
             for boi in list(self.bot.owner_ids):
                 boi = self.bot.get_user(boi)
                 bois += f"- {boi} (`{boi.id}`)\n"
-            embed = discord.Embed(title="Current Bot Owners:", description=bois, color=await ctx.embed_color())
+            embed = discord.Embed(
+                title="Current Bot Owners:", description=bois, color=await ctx.embed_color()
+            )
             await ctx.send(embed=embed)
 
     @owner.command(invoke_without_command=True)
