@@ -25,7 +25,7 @@ class OwnerManagement(commands.Cog):
             boi = ""
             for boi in list(self.bot.owner_ids):
                 boi = self.bot.get_user(boi)
-                bois = f"- {boi} (`{boi.id}`)"
+                bois += f"- {boi} (`{boi.id}`)"
             embed = discord.Embed(title="Current Bot Owner IDs:", description=bois, color=await ctx.embed_color())
             await ctx.send(embed=embed)
 
