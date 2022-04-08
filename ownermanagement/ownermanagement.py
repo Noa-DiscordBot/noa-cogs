@@ -5,7 +5,7 @@ class OwnerManagement(commands.Cog):
     """Owner management utilities."""
 
     __author__ = ["JeffJrShim"]
-    __version__ = "1.0.0"
+    __version__ = "1.1.0"
 
     def __init__(self, bot):
         self.bot = bot
