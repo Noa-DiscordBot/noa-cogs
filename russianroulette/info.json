@@ -1,0 +1,9 @@
+{
+    "author": ["JeffJrShim"], 
+    "name": "RussianRoulette",
+    "install_msg": "Thanks for installing RussianRoulette. If you need any help, feel free to join my server, at https://discord.gg/RSAetqdhRU and ask at the #noa-cogs channel.",
+    "description": "Play a simple Russian roulette game!",
+    "short": "Play a simple Russian roulette game!",
+    "end_user_data_statement": "This cog does not persistently store any data about users",
+    "min_bot_version": "3.4.6"
+}
