@@ -25,6 +25,7 @@ body:
         - LeaveOnBlacklist
         - OwnerManagement
         - RandomNoa
+        - RussianRoulette
     validations:
       required: true
   - type: textarea
