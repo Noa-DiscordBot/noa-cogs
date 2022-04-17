@@ -1,5 +1,8 @@
-from redbot.core import commands, cog_manager
-import random, discord, json
+import json
+import random
+
+import discord
+from redbot.core import cog_manager, commands
 
 
 class BreadFact(commands.Cog):

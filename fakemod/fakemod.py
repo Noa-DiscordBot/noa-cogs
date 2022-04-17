@@ -1,6 +1,7 @@
-from redbot.core import modlog, commands
-import discord
 from datetime import datetime
+
+import discord
+from redbot.core import commands, modlog
 
 
 class FakeMod(commands.Cog):
