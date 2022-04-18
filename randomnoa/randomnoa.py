@@ -1,8 +1,9 @@
-from redbot.core import commands, Config
-from redbot.core.data_manager import bundled_data_path
-import random
-import discord
 import json
+import random
+
+import discord
+from redbot.core import Config, commands
+from redbot.core.data_manager import bundled_data_path
 
 
 class RandomNoa(commands.Cog):

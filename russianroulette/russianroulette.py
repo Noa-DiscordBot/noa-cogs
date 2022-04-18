@@ -1,7 +1,8 @@
-from redbot.core import commands, Config
-import random
 import asyncio
+import random
+
 import discord
+from redbot.core import Config, commands
 
 
 class RussianRoulette(commands.Cog):
