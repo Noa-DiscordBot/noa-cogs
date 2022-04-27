@@ -10,7 +10,7 @@ and, to install cogs from this repository: <br>
 # Current Cogs <br>
 | Cogs list | Description | Version | Authors | Stable? | Hidden? |
 |:---:|---|:---:|:---:|:---:|:---:|
-| BreadFact | Sends a random breadfact | 0.1.0 | JeffJrShim, Peakyyyyy#6142 | ❌ | ❌ |
+| BreadFact | Sends a random breadfact | 0.1.3 | JeffJrShim, Peakyyyyy#6142 | ❌ | ❌ |
 | FakeMod | Fake moderation events, for staff to play around with | 1.0.0 | JeffJrShim, Guacaplushy | ✅ | ❌ |
 | OwnerManagement | Manage bot owners, easily. Please read the big install message provided when installing this cog. | 1.1.0 | JeffJrShim | ✅ | ❌ |
 | RandomNoa | Fetch an official Noa Fukushima card, from the D4DJ Groovy Mix game. | 1.1.0 | JeffJrShim, Onii-chan | ✅ | ❌ |
