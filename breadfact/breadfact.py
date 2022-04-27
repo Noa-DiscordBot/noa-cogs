@@ -10,7 +10,7 @@ class BreadFact(commands.Cog):
     """Sends a random bread fact!"""
 
     __author__ = ["JeffJrShim, ＜－モカアオバ#6142"]
-    __version__ = "0.1.2"
+    __version__ = "0.1.3"
 
     def __init__(self, bot):
         self.bot = bot
