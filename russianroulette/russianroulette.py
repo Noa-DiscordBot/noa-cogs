@@ -11,7 +11,7 @@ class RussianRoulette(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.config = Config.get_conf(self, identifier=723841)
-        default_guild = {"chances": 6}
+        default_guild = {"chances": 6, "dead_msg":"BANG! You're dead!", "safe_msg":"Click! You're safe!"}
         self.config.register_guild(**default_guild)
 
     @commands.command()
@@ -57,16 +57,18 @@ class RussianRoulette(commands.Cog):
             await ctx.send("The new value has been set.")
 
     @commands.mod()
-    @russianrouletteset.command(alias=["survivemsg"], hidden=True)
+    @russianrouletteset.command(alias=["survivemsg"])
     async def safemsg(self, ctx, new_value: str):
-        """[Work in progress] Set default message when you're safe."""
-        pass
+        """Set default message when you're safe."""
+        await self.config.guild(ctx.guild).safe_msg.set(new_value)
+        await ctx.send("The new value has been set.")
 
     @commands.mod()
-    @russianrouletteset.command(alias=["deadmsg"], hidden=True)
+    @russianrouletteset.command(alias=["deadmsg"])
     async def killmsg(self, ctx, new_value: str):
-        """[Work in progress] Set default message when you're killed."""
-        pass
+        """Set default message when you're killed."""
+        await self.config.guild(ctx.guild).dead_msg.set(new_value)
+        await ctx.send("The new value has been set.")
 
     @russianrouletteset.command()
     async def view(self, ctx):
