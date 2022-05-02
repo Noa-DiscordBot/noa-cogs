@@ -18,16 +18,16 @@ class RussianRoulette(commands.Cog):
     @commands.max_concurrency(1, commands.BucketType.channel)
     async def russianroulette(self, ctx):
         """try your luck"""
-        chances_val = 6
+        chances_val = await self.config.guild(ctx.guild).chances()
         killmsg = await self.config.guild(ctx.guild).dead_msg()
         safemsg = await self.config.guild(ctx.guild).safe_msg()
-        russianroulettegenerator = 3 # random.randint(1, chances_val)
+        russianroulettegenerator = random.randint(1, chances_val)
         embed = discord.Embed(
             description="You pulled the trigger and...", color=await ctx.embed_color()
         )
         msg = await ctx.send(embed=embed)
         await asyncio.sleep(3)
-        if russianroulettegenerator == 3:
+        if russianroulettegenerator == 1:
             embed2 = discord.Embed(
                 description=f"You pulled the trigger and...\n\n{killmsg}",
                 color=await ctx.embed_color(),
