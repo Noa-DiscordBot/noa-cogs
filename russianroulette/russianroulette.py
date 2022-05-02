@@ -60,14 +60,14 @@ class RussianRoulette(commands.Cog):
 
     @commands.mod()
     @russianrouletteset.command(alias=["survivemsg"])
-    async def safemsg(self, ctx, new_value: str):
+    async def safemsg(self, ctx, new_value: str="Click! You're safe!"):
         """Set default message when you're safe."""
         await self.config.guild(ctx.guild).safe_msg.set(new_value)
         await ctx.send("The new value has been set.")
 
     @commands.mod()
     @russianrouletteset.command(alias=["deadmsg"])
-    async def killmsg(self, ctx, new_value: str):
+    async def killmsg(self, ctx, new_value: str="BANG! You're dead!"):
         """Set default message when you're killed."""
         await self.config.guild(ctx.guild).dead_msg.set(new_value)
         await ctx.send("The new value has been set.")
