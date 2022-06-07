@@ -8,7 +8,7 @@ class FakeMod(commands.Cog):
     """Fake moderation commands"""
 
     __author__ = ["JeffJrShim", "Guacaplushy"]
-    __version__ = "1.0.0"
+    __version__ = "1.0.1"
 
     def format_help_for_context(self, ctx: commands.Context) -> str:
         """Thanks Sinbad!"""
