@@ -8,7 +8,7 @@ class FakeMod(commands.Cog):
     """Fake moderation commands"""
 
     __author__ = ["JeffJrShim", "Guacaplushy"]
-    __version__ = "1.0.0"
+    __version__ = "1.0.1"
 
     def format_help_for_context(self, ctx: commands.Context) -> str:
         """Thanks Sinbad!"""
@@ -63,7 +63,7 @@ class FakeMod(commands.Cog):
             reason=reason,
         )
 
-        await ctx.send(f"Banned {user}.")
+        await ctx.send(f"Bammed {user}.")
 
     @commands.command()
     @commands.guild_only()
@@ -80,7 +80,7 @@ class FakeMod(commands.Cog):
             reason=reason,
         )
 
-        await ctx.send(f"Kicked {user}.")
+        await ctx.send(f"Kecked {user}.")
 
     @commands.command()
     @commands.guild_only()
@@ -97,7 +97,7 @@ class FakeMod(commands.Cog):
             reason=reason,
         )
 
-        await ctx.send(f"Muted {user}.")
+        await ctx.send(f"Mooted {user}.")
 
     @commands.command()
     @commands.guild_only()
@@ -114,4 +114,4 @@ class FakeMod(commands.Cog):
             reason=reason,
         )
 
-        await ctx.send(f"Warned {user}.")
+        await ctx.send(f"Warmed {user}.")
