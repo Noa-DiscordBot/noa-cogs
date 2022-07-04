@@ -11,7 +11,11 @@ class RussianRoulette(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.config = Config.get_conf(self, identifier=723841)
-        default_guild = {"chances": 6}
+        default_guild = {
+            "chances": 6,
+            "dead_msg": "BANG! You're dead!",
+            "safe_msg": "Click! You're safe!",
+        }
         self.config.register_guild(**default_guild)
 
     @commands.command()
@@ -19,21 +23,23 @@ class RussianRoulette(commands.Cog):
     async def russianroulette(self, ctx):
         """try your luck"""
         chances_val = await self.config.guild(ctx.guild).chances()
+        killmsg = await self.config.guild(ctx.guild).dead_msg()
+        safemsg = await self.config.guild(ctx.guild).safe_msg()
         russianroulettegenerator = random.randint(1, chances_val)
         embed = discord.Embed(
             description="You pulled the trigger and...", color=await ctx.embed_color()
         )
         msg = await ctx.send(embed=embed)
         await asyncio.sleep(3)
-        if russianroulettegenerator == 3:
+        if russianroulettegenerator == 1:
             embed2 = discord.Embed(
-                description=f"You pulled the trigger and...\n\nBANG! You're dead!",
+                description=f"You pulled the trigger and...\n\n{killmsg}",
                 color=await ctx.embed_color(),
             )
             await msg.edit(embed=embed2)
         else:
             embed3 = discord.Embed(
-                description=f"You pulled the trigger and...\n\nClick! You're safe!",
+                description=f"You pulled the trigger and...\n\n{safemsg}",
                 color=await ctx.embed_color(),
             )
             await msg.edit(embed=embed3)
@@ -57,23 +63,25 @@ class RussianRoulette(commands.Cog):
             await ctx.send("The new value has been set.")
 
     @commands.mod()
-    @russianrouletteset.command(alias=["survivemsg"], hidden=True)
-    async def safemsg(self, ctx, new_value: str):
-        """[Work in progress] Set default message when you're safe."""
-        pass
+    @russianrouletteset.command(alias=["survivemsg"])
+    async def safemsg(self, ctx, new_value: str = "Click! You're safe!"):
+        """Set default message when you're safe."""
+        await self.config.guild(ctx.guild).safe_msg.set(new_value)
+        await ctx.send("The new value has been set.")
 
     @commands.mod()
-    @russianrouletteset.command(alias=["deadmsg"], hidden=True)
-    async def killmsg(self, ctx, new_value: str):
-        """[Work in progress] Set default message when you're killed."""
-        pass
+    @russianrouletteset.command(alias=["deadmsg"])
+    async def killmsg(self, ctx, new_value: str = "BANG! You're dead!"):
+        """Set default message when you're killed."""
+        await self.config.guild(ctx.guild).dead_msg.set(new_value)
+        await ctx.send("The new value has been set.")
 
     @russianrouletteset.command()
     async def view(self, ctx):
         """Shows the configuration of the cog."""
         chancesvalue = await self.config.guild(ctx.guild).chances()
-        killmsgvalue = "BANG! You're dead!\n`The command to edit this is a work in progress.`"
-        safemsgvalue = "Click! You're safe!\n`The command to edit this is a work in progress.`"
+        killmsgvalue = await self.config.guild(ctx.guild).dead_msg()
+        safemsgvalue = await self.config.guild(ctx.guild).safe_msg()
         embed = discord.Embed(
             title=f"{ctx.guild}'s Russian Roulette Configuration", color=await ctx.embed_color()
         )
