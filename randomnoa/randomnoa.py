@@ -10,7 +10,7 @@ class RandomNoa(commands.Cog):
     """Sends a random Noa card from the official D4DJ Groovy Mix game."""
 
     __author__ = ["JeffJrShim, Onii-Chan"]
-    __version__ = "1.1.0"
+    __version__ = "1.1.1"
 
     def __init__(self, bot):
         self.bot = bot
