@@ -3,13 +3,6 @@ labels: [enhancement]
 name: "Feature request"
 assignees: JeffJrShim
 body:
-  - type: input
-    id: discord
-    attributes:
-      label: "Discord User Information"
-      description: "To either contact you to ask you more about the details, and/or to inform you that the feature has been implemented. Feel free to leave this blank if you don't feel like sharing it."
-    validations:
-      required: false
   - type: dropdown
     id: cog-name
     attributes:
