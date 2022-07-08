@@ -29,14 +29,18 @@ class RandomNoa(commands.Cog):
                 return_data = {
                     "title": noas[index]["title"],
                     "url": noas[index]["image_url"],
-                    "desc": noas[index]["desc"],
+                    "card_name": noas[index]["card_name"],
+                    "rarity": noas[index]["rarity"],
+                    "trained": noas[index]["trained"],
                 }
             else:
                 random_index = str(random.randint(1, len(noas)))
                 return_data = {
-                    "title": noas[random_index]["title"],
-                    "url": noas[random_index]["image_url"],
-                    "desc": noas[random_index]["desc"],
+                    "title": noas[index]["title"],
+                    "url": noas[index]["image_url"],
+                    "card_name": noas[index]["card_name"],
+                    "rarity": noas[index]["rarity"],
+                    "trained": noas[index]["trained"],
                 }
             return return_data
 
@@ -49,10 +53,12 @@ class RandomNoa(commands.Cog):
         data = await self.random_noa(ctx)
         embed = discord.Embed(
             title=data["title"],
-            description=data["desc"],
             color=await ctx.embed_colour(),
         )
         embed.set_image(url=data["url"])
+        embed.add_field(name="Card Name", value=data["card_name"], inline=True)
+        embed.add_field(name="Rarity", value=data["rarity"], inline=True)
+        embed.add_field(name="Trained", value=data["trained"], inline=True)
         try:
             await ctx.reply(embed=embed, mention_author=False)
         except discord.HTTPException:
