@@ -36,11 +36,11 @@ class RandomNoa(commands.Cog):
             else:
                 random_index = str(random.randint(1, len(noas)))
                 return_data = {
-                    "title": noas[index]["title"],
-                    "url": noas[index]["image_url"],
-                    "card_name": noas[index]["card_name"],
-                    "rarity": noas[index]["rarity"],
-                    "trained": noas[index]["trained"],
+                    "title": noas[random_index]["title"],
+                    "url": noas[random_index]["image_url"],
+                    "card_name": noas[random_index]["card_name"],
+                    "rarity": noas[random_index]["rarity"],
+                    "trained": noas[random_index]["trained"],
                 }
             return return_data
 
