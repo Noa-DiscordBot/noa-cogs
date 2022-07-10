@@ -11,7 +11,7 @@ from dataclasses import dataclass
 class Card:
     title: str
     url: str
-    card_name str
+    card_name: str
     rarity: str
     trained: str
 
