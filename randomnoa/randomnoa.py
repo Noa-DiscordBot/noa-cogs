@@ -1,10 +1,10 @@
 import json
 import random
+from dataclasses import dataclass
 
 import discord
 from redbot.core import Config, commands
 from redbot.core.data_manager import bundled_data_path
-from dataclasses import dataclass
 
 
 @dataclass
@@ -14,6 +14,7 @@ class Card:
     card_name: str
     rarity: str
     trained: str
+
 
 class RandomNoa(commands.Cog):
     """Sends a random Noa card from the official D4DJ Groovy Mix game."""
@@ -40,8 +41,8 @@ class RandomNoa(commands.Cog):
                     card["image_url"],
                     card["card_name"],
                     card["rarity"],
-                    card["trained"]
-                    )
+                    card["trained"],
+                )
             else:
                 card = noas[str(random.randint(1, len(noas)))]
                 card_data = Card(
@@ -49,8 +50,8 @@ class RandomNoa(commands.Cog):
                     card["image_url"],
                     card["card_name"],
                     card["rarity"],
-                    card["trained"]
-                    )
+                    card["trained"],
+                )
             return card_data
 
     @commands.command()
