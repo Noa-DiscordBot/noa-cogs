@@ -61,10 +61,10 @@ class RandomNoa(commands.Cog):
 
         data = await self.random_noa(ctx)
         embed = discord.Embed(
-            title=data[.title,
+            title=data.title,
             color=await ctx.embed_colour(),
         )
-        embed.set_image(url=data.url])
+        embed.set_image(url=data.url)
         embed.add_field(name="Card Name", value=data.card_name, inline=True)
         embed.add_field(name="Rarity", value=data.rarity, inline=True)
         embed.add_field(name="Trained", value=data.trained, inline=True)
