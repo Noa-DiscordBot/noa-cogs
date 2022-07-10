@@ -4,7 +4,16 @@ import random
 import discord
 from redbot.core import Config, commands
 from redbot.core.data_manager import bundled_data_path
+from dataclasses import dataclass
 
+
+@dataclass
+class Card:
+    title: str
+    url: str
+    card_name str
+    rarity: str
+    trained: str
 
 class RandomNoa(commands.Cog):
     """Sends a random Noa card from the official D4DJ Groovy Mix game."""
@@ -25,24 +34,24 @@ class RandomNoa(commands.Cog):
             rigged = await self.config.rigged()
             card_no = await self.config.card()
             if await self.bot.is_owner(ctx.author) == True and rigged == True:
-                index = str(card_no)
-                return_data = {
-                    "title": noas[index]["title"],
-                    "url": noas[index]["image_url"],
-                    "card_name": noas[index]["card_name"],
-                    "rarity": noas[index]["rarity"],
-                    "trained": noas[index]["trained"],
-                }
+                card = noas[str(card_no)]
+                card_data = Card(
+                    card["title"],
+                    card["image_url"],
+                    card["card_name"],
+                    card["rarity"],
+                    card["trained"]
+                    )
             else:
-                random_index = str(random.randint(1, len(noas)))
-                return_data = {
-                    "title": noas[random_index]["title"],
-                    "url": noas[random_index]["image_url"],
-                    "card_name": noas[random_index]["card_name"],
-                    "rarity": noas[random_index]["rarity"],
-                    "trained": noas[random_index]["trained"],
-                }
-            return return_data
+                card = noas[str(random.randint(1, len(noas)))]
+                card_data = Card(
+                    card["title"],
+                    card["image_url"],
+                    card["card_name"],
+                    card["rarity"],
+                    card["trained"]
+                    )
+            return card_data
 
     @commands.command()
     async def randomnoa(self, ctx):
@@ -52,13 +61,13 @@ class RandomNoa(commands.Cog):
 
         data = await self.random_noa(ctx)
         embed = discord.Embed(
-            title=data["title"],
+            title=data[.title,
             color=await ctx.embed_colour(),
         )
-        embed.set_image(url=data["url"])
-        embed.add_field(name="Card Name", value=data["card_name"], inline=True)
-        embed.add_field(name="Rarity", value=data["rarity"], inline=True)
-        embed.add_field(name="Trained", value=data["trained"], inline=True)
+        embed.set_image(url=data.url])
+        embed.add_field(name="Card Name", value=data.card_name, inline=True)
+        embed.add_field(name="Rarity", value=data.rarity, inline=True)
+        embed.add_field(name="Trained", value=data.trained, inline=True)
         try:
             await ctx.reply(embed=embed, mention_author=False)
         except discord.HTTPException:
