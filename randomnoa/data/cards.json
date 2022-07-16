@@ -3,187 +3,261 @@
         "1": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/gyLRVCf/noa1star.png",
-            "desc": "Card Name: Uniform \n Rarity: 1⭐ \n Untrained or Trained: None \n"
+            "card_name": "Uniform",
+            "rarity": "1⭐",
+            "trained": "None"
         },
         "2": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/zQTQMVh/noa2star.png",
-            "desc": "Card Name: DJ-LIVE! \n Rarity: 2⭐\n Untrained or Trained: None \n"
+            "card_name": "DJ-LIVE!",
+            "rarity": "2⭐",
+            "trained": "None"
         },
         "3": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/B4V3hYf/noa2starfirstanniversary.png",
-            "desc": "Card Name: DJ-MIX! \n Rarity: 2⭐\n Untrained or Trained: None \n"
+            "card_name": "DJ-MIX!",
+            "rarity":"2⭐", 
+            "trained": "None"
         },
         "4": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/16W96zr/noa3starinitial.png",
-            "desc": "Card Name: CuteBringer \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+            "card_name": "CuteBringer", 
+            "rarity": "3⭐", 
+            "trained": "Untrained"
         },
         "5": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/mHZQDFR/noa3starinitial-t.png",
-            "desc": "Card Name: CuteBringer \n Rarity: 3⭐\n Untrained or Trained: Trained \n"
+            "card_name": "CuteBringer",
+            "rarity": "3⭐",
+            "trained": "Trained"
         },
         "6": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/W3SxhHh/noa3stard4fes.png",
-            "desc": "Card Name: Melty Smile \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+            "card_name": "Melty Smile",
+            "rarity": "3⭐",
+            "trained": "Untrained"
         },
         "7": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/wMycFKV/noa3stard4fes-t.png",
-            "desc": "Card Name: Melty Smile \n Rarity: 3⭐\n Untrained or Trained: Trained \n"
+            "card_name": "Melty Smile",
+            "rarity": "3⭐",
+            "trained": "Trained"
         },
         "8": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/1MyW8sR/noa3starmonhun.png",
-            "desc": "Card Name: EXウルムーα\n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+            "card_name": "EXウルムーα",
+            "rarity": "3⭐",
+            "trained": "Untrained"
         },
         "9": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/47sRfZj/noa3starmonhun-t.png",
-            "desc": "Card Name: EXウルムーα \n Rarity: 3⭐\n Untrained or Trained: Trained \n"
+            "card_name": "EXウルムーα",
+            "rarity": "3⭐",
+            "trained": "Trained"
         },
         "10": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/Yh2NYvW/noa3starteamcevent.png",
-            "desc": "Card Name: Enchanted Lamp \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+            "card_name": " Enchanted Lamp",
+            "rarity": "3⭐",
+            "trained": "Untrained"
         },
         "11": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/LJWHthY/noa3starteamcevent-t.png",
-            "desc": "Card Name: Enchanted Lamp \n Rarity: 3⭐\n Untrained or Trained: Trained  \n"
+            "card_name": " Enchanted Lamp",
+            "rarity": "3⭐",
+            "trained": "Trained"
         },
         "12": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/hW91cM4/noa4starinitial.png",
-            "desc": "Card Name: Skydrifter \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n"
+            "card_name": " Skydrifter",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "13": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/554b9wy/noa4starinitial-t.png",
-            "desc":  "Card Name: Skydrifter \n Rarity: 4⭐\n Untrained or Trained: Trained  \n"
+            "card_name":  "Skydrifter",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "14": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/ThSRvzd/noa4starlantern.png",
-            "desc": "Card Name: Fantastic Lantern \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n"
+            "card_name": " Fantastic Lantern",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "15": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/5195Zyt/noa4starlantern-t.png",
-            "desc": "Card Name: Fantastic Lantern \n Rarity: 4⭐\n Untrained or Trained: Trained  \n"
+            "card_name": " Fantastic Lantern",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "16": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/XjRt3sC/noa4starwhiteday.png",
-            "desc": "Card Name: Sweet Cookie \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n"
+            "card_name": " Sweet Cookie",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "17": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/tZdK2Sf/noa4starwhiteday-t.png",
-            "desc": "Card Name: Sweet Cookie \n Rarity: 4⭐\n Untrained or Trained: Trained  \n"
+            "card_name": "Sweet Cookie",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "18": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/HCv4rrc/noa4stargotoubun.png",
-            "desc": "Card Name: \n - English name: Brilliant Hydrangea\n - Japanese name: 燦爛たるあじさい \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n "
+            "card_name": " - English name: Brilliant Hydrangea\n- Japanese name: 燦爛たるあじさい",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "19": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/hCHGkvf/noa4stargotoubun-t.png",
-            "desc": "Card Name: \n - English name: Brilliant Hydrangea\n - Japanese name: 燦爛たるあじさい \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+            "card_name": " - English name: Brilliant Hydrangea\n- Japanese name: 燦爛たるあじさい",
+            "rarity": "4⭐", 
+            "trained": "Trained"
         },
         "20": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/SRp0Sqm/noa4startanabata.png",
-            "desc": "Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Untrained \n"
+            "card_name": "Lemonade Flash",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "21": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/hdsvF8S/noa4startanabata-t.png",
-            "desc": "Card Name: Lemonade Flash \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+            "card_name": "Lemonade Flash",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "22": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/TLwFN5G/noa4starbirthday.png",
-            "desc": "Card Name: Birthday Noa (1st Set) \n Rarity: 4⭐\n Untrained or Trained: Untrained \n"
+            "card_name": " Birthday Noa (1st Set)",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "23": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/mb2QRdz/noa4starbirthday-t.png",
-            "desc": "Card Name: Birthday Noa (1st Set) \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+            "card_name": "Birthday Noa (1st Set)",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "24": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/GCFH5mp/noaSP.png",
-            "desc": "Card Name: 1st Anniversary \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+            "card_name": "1st Anniversary",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "25": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/BnWtGjY/Love-Injection.jpg",
-            "desc": "Card Name: Love♡Injection \n Rarity: 3⭐\n Untrained or Trained: Untrained \n"
+            "card_name": "Love♡Injection",
+            "rarity": "3⭐",
+            "trained": "Untrained"
         },
         "26": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/pPNcCCK/Love-Injection-T.jpg",
-            "desc": "Card Name: Love♡Injection \n Rarity: 3⭐\n Untrained or Trained: Trained"
+            "card_name": "Love♡Injection",
+            "rarity": "3⭐",
+            "trained": "Trained"
         },
         "27": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/gRSqMQp/1000-un.png",
-            "desc": "Card Name: Promised Bench \n Rarity: 4⭐\n Untrained or Trained: Untrained \n"
+            "card_name": "Promised Bench",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "28": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/MsMz0jY/1000.png",
-            "desc": "Card Name: Promised Bench \n Rarity: 4⭐\n Untrained or Trained: Trained \n"
+            "card_name": "Promised Bench",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "29": {
             "title": "Is that.... a prank?",
             "image_url": "https://c.tenor.com/wuyEcsxrvQwAAAAC/club-penguin-ghosthy.gif",
-            "desc": "Card Name: Pingu Hitting Those Moves \n Rarity: 20:star: \n Untrained or Trained: Trained (obviously?) \n"
+            "card_name": " Pingu Hitting Those Moves",
+            "rarity": "20⭐",
+            "trained": "Trained (obviously?)"
         },
         "30": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/kg0Dw2r/I.jpg",
-            "desc": "Card Name: I can see through your escape route \n Rarity: 4⭐\n Untrained or Trained: Untrained  \n"
+            "card_name": "I can see through your escape route",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "31": {
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/Pm2wDS6/FNkp-m5-VIAAn-S-b.jpg",
-            "desc": "Card Name: I can see through your escape route \n Rarity: 4⭐\n Untrained or Trained: Trained\n"
+            "card_name": "I can see through your escape route",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "32":{
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/mbvPsc1/relationsuntrained.jpg",
-            "desc": "Card Name: Pale and Dainty Wings \n Rarity: 4⭐\n Untrained or Trained: Untrained\n"
+            "card_name": "Pale and Dainty Wings",
+            "rarity": "4⭐", 
+            "trained": "Untrained"
         },
         "33":{
             "title": "Here is your random Noa!",
             "image_url": "https://i.ibb.co/VJMQXW6/relationstrained.jpg",
-            "desc": "Card Name: Pale and Dainty Wings \n Rarity: 4⭐\n Untrained or Trained: Trained\n"
+            "card_name": "Pale and Dainty Wing",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "34":{
             "title": "Here is your random Noa!",
             "image_url": "https://cdn.discordapp.com/attachments/938401271461839001/992390472708399104/unknown.png",
-            "desc": "Card Name: Cute Infration \n Rarity: 4⭐\n Untrained or Trained: Untrained\n"
+            "card_name": "Cute Infration",
+            "rarity": "4⭐",
+            "trained": "Untrained"
         },
         "35":{
             "title": "Here is your random Noa!",
             "image_url": "https://cdn.discordapp.com/attachments/938401271461839001/992390509475659817/unknown.png",
-            "desc": "Card Name: Cute Infration \n Rarity: 4⭐\n Untrained or Trained: Trained\n"
+            "card_name": " Cute Infration",
+            "rarity": "4⭐",
+            "trained": "Trained"
         },
         "36":{
             "title": "Here is your random Noa!",
             "image_url": "https://cdn.discordapp.com/attachments/938401271461839001/993515823631179897/unknown.png",
-            "desc": "Card Name: カワイイに捧ぐ三宝 \n Rarity: 3⭐\n Untrained or Trained: Trained\n"
+            "card_name": "カワイイに捧ぐ三宝",
+            "rarity": "3⭐",
+            "trained": "Trained"
         },
         "37":{
             "title": "Here is your random Noa!",
             "image_url": "https://cdn.discordapp.com/attachments/938401271461839001/993514487929917512/unknown.png",
-            "desc": "Card Name: カワイイに捧ぐ三宝 \n Rarity: 3⭐\n Untrained or Trained: Untrained\n"
+            "card_name": "カワイイに捧ぐ三宝",
+            "rarity": "3⭐",
+            "trained": "Untrained"
         }
     }
 }
