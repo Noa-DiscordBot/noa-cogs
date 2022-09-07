@@ -2,7 +2,7 @@ import json
 import random
 
 import discord
-from redbot.core import cog_manager, commands
+from redbot.core import cog_manager, commands, Config
 
 
 class BreadFact(commands.Cog):
@@ -13,6 +13,10 @@ class BreadFact(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
+        self.config = Config.get_conf(self, identifier=472911)
+        default_global = {
+            replies: True
+        }
 
     def format_help_for_context(self, ctx: commands.Context) -> str:
         """Thanks Sinbad!"""
