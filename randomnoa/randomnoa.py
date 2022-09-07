@@ -70,9 +70,7 @@ class RandomNoa(commands.Cog):
         embed.add_field(name="Rarity", value=data.rarity, inline=True)
         embed.add_field(name="Trained", value=data.trained, inline=True)
         embed.set_footer(
-            text="Powered by Lena",
-            icon_url="https://bae.lena.moe/l9q3mnnat3i3.gif",
-        )
+            text="Powered by Lena", icon_url="https://bae.lena.moe/l9q3mnnat3i3.gif")
         try:
             await ctx.reply(embed=embed, mention_author=False)
         except discord.HTTPException:
