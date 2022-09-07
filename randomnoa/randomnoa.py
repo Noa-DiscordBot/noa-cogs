@@ -69,9 +69,10 @@ class RandomNoa(commands.Cog):
         embed.add_field(name="Card Name", value=data.card_name, inline=True)
         embed.add_field(name="Rarity", value=data.rarity, inline=True)
         embed.add_field(name="Trained", value=data.trained, inline=True)
-        embed.set_footer(text="Powered by Lena",
-                icon_url="https://bae.lena.moe/l9q3mnnat3i3.gif",
-            )
+        embed.set_footer(
+            text="Powered by Lena",
+            icon_url="https://bae.lena.moe/l9q3mnnat3i3.gif",
+        )
         try:
             await ctx.reply(embed=embed, mention_author=False)
         except discord.HTTPException:
@@ -98,7 +99,9 @@ class RandomNoa(commands.Cog):
             data = json.load(noa)
             noas = data["noas"]
         if card > len(noas) or card < 1:
-            return await ctx.send(f"The value cannot be less then 1 or more then {len(noas)}")
+            return await ctx.send(
+                f"The value cannot be less then 1 or more then {len(noas)}"
+            )
         else:
             await self.config.card.set(card)
         await ctx.send("The new card value has been set.")
