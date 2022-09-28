@@ -27,32 +27,26 @@ class RandomNoa(commands.Cog):
         self.config = Config.get_conf(self, identifier=694641)
         default_config = {"rigged": False, "card": None}
         self.config.register_global(**default_config)
-
-    async def random_noa(self, ctx):
         with open(bundled_data_path(self) / "cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
-            noas = data["noas"]
-            rigged = await self.config.rigged()
-            card_no = await self.config.card()
-            if await self.bot.is_owner(ctx.author) == True and rigged == True:
-                card = noas[str(card_no)]
-                card_data = Card(
+            self.noas = data["noas"]
+        
+    async def fetch_card(self, card_no: int):
+            card = self.noas[card_no]
+            return Card(
                     card["title"],
                     card["image_url"],
                     card["card_name"],
                     card["rarity"],
                     card["trained"],
                 )
-            else:
-                card = noas[str(random.randint(1, len(noas)))]
-                card_data = Card(
-                    card["title"],
-                    card["image_url"],
-                    card["card_name"],
-                    card["rarity"],
-                    card["trained"],
-                )
-            return card_data
+
+    #If we really want to, this function can be merged with the command.
+    async def random_noa(self, ctx):
+        rigged = await self.config.rigged()
+        card_no = await self.config.card()
+        return fetch_card(card_no) (if await self.bot.is_owner(ctx.author) == True and rigged == True) else fetch_card(random.randint(1, len(noas))
+        
 
     @commands.command()
     async def randomnoa(self, ctx):
