@@ -27,7 +27,9 @@ class OwnerManagement(commands.Cog):
                 boi = self.bot.get_user(boi)
                 bois += f"- {boi} (`{boi.id}`)\n"
             embed = discord.Embed(
-                title="Current Bot Owners:", description=bois, color=await ctx.embed_color()
+                title="Current Bot Owners:",
+                description=bois,
+                color=await ctx.embed_color(),
             )
             await ctx.send(embed=embed)
 
@@ -37,7 +39,9 @@ class OwnerManagement(commands.Cog):
         """Add an owner. Be sure to note that adding the user as an owner will give that user access to everything on your bot. Use this command at your own risk."""
         user = self.bot.get_user(user.id)
         if user.id in self.bot.owner_ids:
-            return await ctx.send("That user is already one of the bot owners.")
+            return await ctx.send(
+                "That user is already one of the bot owners."
+            )
         else:
             self.bot.owner_ids.add(user.id)
             await ctx.tick()
@@ -53,7 +57,9 @@ class OwnerManagement(commands.Cog):
         remmsg = f"{user} is no longer a bot owner."
         getoutmsg = f"{user} is a default owner, and cannot be removed."
         if user.id in self.default_owners:
-            return await ctx.send(getoutmsg, reference=ctx.message.to_reference())
+            return await ctx.send(
+                getoutmsg, reference=ctx.message.to_reference()
+            )
         else:
             if user.id not in self.bot.owner_ids:
                 return await ctx.send("That user isn't one of the bot owners.")

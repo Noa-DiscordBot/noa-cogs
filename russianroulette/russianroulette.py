@@ -27,7 +27,8 @@ class RussianRoulette(commands.Cog):
         safemsg = await self.config.guild(ctx.guild).safe_msg()
         russianroulettegenerator = random.randint(1, chances_val)
         embed = discord.Embed(
-            description="You pulled the trigger and...", color=await ctx.embed_color()
+            description="You pulled the trigger and...",
+            color=await ctx.embed_color(),
         )
         msg = await ctx.send(embed=embed)
         await asyncio.sleep(3)
@@ -83,7 +84,8 @@ class RussianRoulette(commands.Cog):
         killmsgvalue = await self.config.guild(ctx.guild).dead_msg()
         safemsgvalue = await self.config.guild(ctx.guild).safe_msg()
         embed = discord.Embed(
-            title=f"{ctx.guild}'s Russian Roulette Configuration", color=await ctx.embed_color()
+            title=f"{ctx.guild}'s Russian Roulette Configuration",
+            color=await ctx.embed_color(),
         )
         embed.add_field(name="Chances", value=chancesvalue, inline=False)
         embed.add_field(name="Death Message", value=killmsgvalue, inline=False)
