@@ -6,7 +6,10 @@ from redbot.core import Config, commands
 
 
 class RussianRoulette(commands.Cog):
-    """russian roulette tbh"""
+    """A fun Russian Roulette cog to make things exciting!"""
+
+    __author__ = ["JeffJrShim"]
+    __version__ = "0.3.1"
 
     def __init__(self, bot):
         self.bot = bot
@@ -17,6 +20,11 @@ class RussianRoulette(commands.Cog):
             "safe_msg": "Click! You're safe!",
         }
         self.config.register_guild(**default_guild)
+
+    def format_help_for_context(self, ctx: commands.Context) -> str:
+        """Thanks Sinbad!"""
+        pre_processed = super().format_help_for_context(ctx)
+        return f"{pre_processed}\n\nAuthors: {', '.join(self.__author__)}\nCog Version: {self.__version__}"
 
     @commands.command()
     @commands.max_concurrency(1, commands.BucketType.channel)
