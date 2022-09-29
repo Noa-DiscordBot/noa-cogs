@@ -32,9 +32,7 @@ class RandomNoa(commands.Cog):
         self.config = Config.get_conf(self, identifier=694641)
         default_config = {"rigged": False, "card": None}
         self.config.register_global(**default_config)
-        with open(
-            bundled_data_path(self) / "cards.json", "r", encoding="utf-8"
-        ) as noa:
+        with open(bundled_data_path(self) / "cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
             self.noas = data["noas"]
 
@@ -105,15 +103,11 @@ class RandomNoa(commands.Cog):
     @randomnoaset.command()
     async def riggedcard(self, ctx, card: int):
         """Choose the rigged card"""
-        with open(
-            bundled_data_path(self) / "cards.json", "r", encoding="utf-8"
-        ) as noa:
+        with open(bundled_data_path(self) / "cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
             noas = data["noas"]
         if card > len(noas) or card < 1:
-            return await ctx.send(
-                f"The value cannot be less then 1 or more then {len(noas)}"
-            )
+            return await ctx.send(f"The value cannot be less then 1 or more then {len(noas)}")
         else:
             await self.config.card.set(card)
         await ctx.send("The new card value has been set.")

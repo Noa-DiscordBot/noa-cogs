@@ -39,9 +39,7 @@ class OwnerManagement(commands.Cog):
         """Add an owner. Be sure to note that adding the user as an owner will give that user access to everything on your bot. Use this command at your own risk."""
         user = self.bot.get_user(user.id)
         if user.id in self.bot.owner_ids:
-            return await ctx.send(
-                "That user is already one of the bot owners."
-            )
+            return await ctx.send("That user is already one of the bot owners.")
         self.bot.owner_ids.add(user.id)
         await ctx.tick()
         msg = (
