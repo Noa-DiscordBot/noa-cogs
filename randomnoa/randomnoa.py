@@ -17,42 +17,50 @@ class Card:
 
 
 class RandomNoa(commands.Cog):
-    """Sends a random Noa card from the official D4DJ Groovy Mix game."""
+    """Sends a random Noa card with data from the official D4DJ Groovy Mix game."""
 
     __author__ = ["JeffJrShim, Onii-Chan"]
-    __version__ = "2.0.0"
+    __version__ = "2.1.0"
+
+    def format_help_for_context(self, ctx: commands.Context) -> str:
+        """Thanks Sinbad!"""
+        pre_processed = super().format_help_for_context(ctx)
+        return f"{pre_processed}\n\nAuthors: {', '.join(self.__author__)}\nCog Version: {self.__version__}"
 
     def __init__(self, bot):
         self.bot = bot
         self.config = Config.get_conf(self, identifier=694641)
         default_config = {"rigged": False, "card": None}
         self.config.register_global(**default_config)
-
-    async def random_noa(self, ctx):
         with open(bundled_data_path(self) / "cards.json", "r", encoding="utf-8") as noa:
             data = json.load(noa)
-            noas = data["noas"]
-            rigged = await self.config.rigged()
-            card_no = await self.config.card()
-            if await self.bot.is_owner(ctx.author) == True and rigged == True:
-                card = noas[str(card_no)]
-                card_data = Card(
-                    card["title"],
-                    card["image_url"],
-                    card["card_name"],
-                    card["rarity"],
-                    card["trained"],
-                )
-            else:
-                card = noas[str(random.randint(1, len(noas)))]
-                card_data = Card(
-                    card["title"],
-                    card["image_url"],
-                    card["card_name"],
-                    card["rarity"],
-                    card["trained"],
-                )
-            return card_data
+            self.noas = data["noas"]
+
+    async def fetch_card(self, card_no: int):
+        """
+        An asynchronous function that fetches a card from our json list by its card number.
+        """
+        card = self.noas[card_no]
+        return Card(
+            card["title"],
+            card["image_url"],
+            card["card_name"],
+            card["rarity"],
+            card["trained"],
+        )
+
+    # If we really want to, this function can be merged with the command.
+    async def random_noa(self, ctx):
+        """
+        Uses the fetch_card function to make it easier to fetch a random card.
+        """
+        rigged = await self.config.rigged()
+        card_no = await self.config.card()
+        return (
+            await self.fetch_card(card_no)
+            if await self.bot.is_owner(ctx.author) is True and rigged is True
+            else await self.fetch_card(random.randint(1, len(self.noas)))
+        )
 
     @commands.command()
     async def randomnoa(self, ctx):

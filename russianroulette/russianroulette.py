@@ -6,7 +6,10 @@ from redbot.core import Config, commands
 
 
 class RussianRoulette(commands.Cog):
-    """russian roulette tbh"""
+    """A fun Russian Roulette cog to make things exciting!"""
+
+    __author__ = ["JeffJrShim"]
+    __version__ = "0.3.1"
 
     def __init__(self, bot):
         self.bot = bot
@@ -18,6 +21,11 @@ class RussianRoulette(commands.Cog):
         }
         self.config.register_guild(**default_guild)
 
+    def format_help_for_context(self, ctx: commands.Context) -> str:
+        """Thanks Sinbad!"""
+        pre_processed = super().format_help_for_context(ctx)
+        return f"{pre_processed}\n\nAuthors: {', '.join(self.__author__)}\nCog Version: {self.__version__}"
+
     @commands.command()
     @commands.max_concurrency(1, commands.BucketType.channel)
     async def russianroulette(self, ctx):
@@ -27,7 +35,8 @@ class RussianRoulette(commands.Cog):
         safemsg = await self.config.guild(ctx.guild).safe_msg()
         russianroulettegenerator = random.randint(1, chances_val)
         embed = discord.Embed(
-            description="You pulled the trigger and...", color=await ctx.embed_color()
+            description="You pulled the trigger and...",
+            color=await ctx.embed_color(),
         )
         msg = await ctx.send(embed=embed)
         await asyncio.sleep(3)
@@ -83,7 +92,8 @@ class RussianRoulette(commands.Cog):
         killmsgvalue = await self.config.guild(ctx.guild).dead_msg()
         safemsgvalue = await self.config.guild(ctx.guild).safe_msg()
         embed = discord.Embed(
-            title=f"{ctx.guild}'s Russian Roulette Configuration", color=await ctx.embed_color()
+            title=f"{ctx.guild}'s Russian Roulette Configuration",
+            color=await ctx.embed_color(),
         )
         embed.add_field(name="Chances", value=chancesvalue, inline=False)
         embed.add_field(name="Death Message", value=killmsgvalue, inline=False)
