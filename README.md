@@ -13,9 +13,9 @@ and, to install cogs from this repository: <br>
 |:---:|---|:---:|:---:|:---:|:---:|
 | BreadFact | Sends a random breadfact | 0.1.0 | JeffJrShim, Peakyyyyy#6142 | ❌ | ❌ |
 | FakeMod | Fake moderation events, for staff to play around with | 1.0.1 | JeffJrShim, Guacaplushy | ✅ | ❌ |
-| OwnerManagement | Manage bot owners, easily. Please read the big install message provided when installing this cog. | 1.1.0 | JeffJrShim | ✅ | ❌ |
-| RandomNoa | Fetch an official Noa Fukushima card, from the D4DJ Groovy Mix game. | 2.0.0 | JeffJrShim, Onii-Chan | ✅ | ❌ |
-| RussianRoulette | Play a simple Russian roulette game! | 1.1.0 | JeffJrShim | ✅ | ❌ |
+| OwnerManagement | Manage bot owners, easily. Please read the big install message provided when installing this cog. | 1.2.0 | JeffJrShim | ✅ | ❌ |
+| RandomNoa | Fetch an official Noa Fukushima card, from the D4DJ Groovy Mix game. | 2.1.0 | JeffJrShim, Onii-Chan | ✅ | ❌ |
+| RussianRoulette | Play a simple Russian roulette game! | 0.3.1 | JeffJrShim | ✅ | ❌ |
 
 ## Contributing <br>
 You may submit pull requests and issues if you have found any weird bugs or unintended behaviour with my cogs. <br>
