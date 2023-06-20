@@ -1,5 +1,6 @@
 from .ownermanagement import OwnerManagement
 
 
-def setup(bot):
-    bot.add_cog(OwnerManagement(bot))
+async def setup(bot):
+    cog = OwnerManagement(bot)
+    await bot.add_cog(cog)

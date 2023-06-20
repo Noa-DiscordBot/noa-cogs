@@ -1,5 +1,6 @@
 from .breadfact import BreadFact
 
 
-def setup(bot):
-    bot.add_cog(BreadFact(bot))
+async def setup(bot):
+    cog = BreadFact(bot)
+    await bot.add_cog(cog)

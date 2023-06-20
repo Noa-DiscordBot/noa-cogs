@@ -98,7 +98,7 @@ class RussianRoulette(commands.Cog):
         embed.add_field(name="Chances", value=chancesvalue, inline=False)
         embed.add_field(name="Death Message", value=killmsgvalue, inline=False)
         embed.add_field(name="Safe Message", value=safemsgvalue, inline=False)
-        embed.set_thumbnail(url=ctx.guild.icon_url)
+        embed.set_thumbnail(url=ctx.guild.icon.url)
         embed.set_footer(
             text=f"To edit these values, use {ctx.prefix}help russianrouletteset to see the commands."
         )
